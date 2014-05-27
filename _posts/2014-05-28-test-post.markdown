@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Test Post"
+date:   2014-05-28 11:51:43
+---
+
+Here's a test post.
