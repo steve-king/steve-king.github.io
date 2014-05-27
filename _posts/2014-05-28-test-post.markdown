@@ -2,6 +2,7 @@
 layout: post
 title:  "Test Post"
 date:   2014-05-28 11:51:43
+permalink: /work/test-post.html
 ---
 
 Here's a test post.

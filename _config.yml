@@ -1,7 +1,11 @@
 exclude: [
-	README.md, 
+	scss,
 	Gemfile,
-	Gemfile.lock
+	Gemfile.lock,
+	Gruntfile.js,
+	node_modules,
+	package.json,
+	README.md
 ]
 markdown: kramdown
-baseurl: http://steve-king.github.io
+permalink: /:title
