@@ -1,0 +1,33 @@
+@mixin respond-min($point) {
+	@each $breakpoint in $breakpoints {
+		@if $point == $breakpoint {
+			@media (min-width:#{$breakpoint / 16}em) { 
+				@content; 
+			}
+		}
+	}
+}
+
+@mixin respond-max($point) {
+	@each $breakpoint in $breakpoints {
+		@if $point == $breakpoint {
+			@media (min-width:#{$breakpoint-1 / 16}em) { 
+				@content; 
+			}
+		}
+	}
+}
+
+@mixin transition($value){
+	-webkit-transition : $value;
+	-moz-transition : $value;
+	-ms-transition : $value;
+	transition : $value;
+}
+
+@mixin border-radius($value){
+	-webkit-border-radius:$value;
+	-moz-border-radius:$value;
+	-o-border-radius:$value;
+	border-radius:$value;
+}

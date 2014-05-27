@@ -1,7 +1,42 @@
-body {
-	background:#eee;
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
 
-	li {
-		color:teal;
+body {
+	background:#fff;
+}
+
+.site-header {
+	background:$darkBG;
+	color:#fff;
+	line-height:$mobileHeaderHeight;
+	height:$mobileHeaderHeight;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+}
+
+.site-main {
+	margin-top:$mobileHeaderHeight;
+}
+
+@include respond-min(480) {
+	.site-header {
+		position:fixed;
+		width:$desktopHeaderWidth;
+		height:100%;
+	}
+
+	.site-main {
+		margin-top:0;
+		margin-left:$desktopHeaderWidth;
 	}
 }
+
+// .site-footer {
+// 	background:$darkBG;
+// 	color:#fff;
+// 	line-height:50px;
+// 	height:50px;
+// }
+

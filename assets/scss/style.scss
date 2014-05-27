@@ -1,7 +1,14 @@
+// Non CSS generating SCSS
+@import "variables",
+		"mixins";
+
+// CSS resets
 @import "vendor/normalize",
 		"vendor/boilerplate";
 
+// Author styles
 @import "_main";
 
+// Helper classes/print styles
 @import "vendor/helpers",
 		"vendor/print";

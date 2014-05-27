@@ -2,13 +2,12 @@
 layout: default
 ---
 
-<h1>Indexxxx</h1>
-
 <ul class="posts">
 	{% for post in site.posts %}
-	<li>
+	<li class="post-block">
 		<span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
 		<a class="post-link" href="{{ post.url | prepend: baseurl }}">{{ post.title }}</a>
+		{{ post.content }}
 	</li>
 	{% endfor %}
 </ul>
