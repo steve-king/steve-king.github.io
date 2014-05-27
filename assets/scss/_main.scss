@@ -44,7 +44,7 @@ body {
 		@include border-radius(0 0 $borderRadius $borderRadius);
 		color:#fff;
 		padding:5px 10px;
-		@include font-size(12);
+		@include font-size(14);
 		//display:none;
 	}
 }
