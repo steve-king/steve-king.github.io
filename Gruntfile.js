@@ -20,7 +20,7 @@ module.exports = function(grunt) {
       src: ['assets/js/*.js',
             'assets/js/**/*.js',
             '!assets/js/vendor/*.js',
-            '!assets/js/plugins/*.js',
+            '!assets/js/plugins.js',
             '!assets/js/plugins/**/*.js']
     },
     imagemin : {

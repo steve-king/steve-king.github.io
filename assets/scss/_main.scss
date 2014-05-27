@@ -8,7 +8,7 @@ html {
 }
 
 body {
-	background:#666;
+	background:#456;
 
 	@include font-size(14);
 	line-height:1.4;
@@ -20,7 +20,7 @@ body {
 }
 
 .post {
-	max-width:300px;
+	width:300px;
 	margin:5px;
 	float:left;
 
@@ -34,7 +34,7 @@ body {
 	}
 
 	.post-content {
-		padding:10px;
+		padding:10px 10px 1px;
 		background:#fff;
 		
 	}
@@ -43,12 +43,18 @@ body {
 		background:#222;
 		@include border-radius(0 0 $borderRadius $borderRadius);
 		color:#fff;
-		padding:10px;
+		padding:5px 10px;
+		@include font-size(12);
+		//display:none;
 	}
 }
 
 h2 {
-	margin:0;
+	margin:0 0 5px;
+}
+
+p {
+	margin-top:0;
 }
 
 // .site-footer {
