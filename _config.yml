@@ -3,3 +3,5 @@ exclude: [
 	Gemfile,
 	Gemfile.lock
 ]
+markdown: kramdown
+baseurl: http://steve-king.github.io
