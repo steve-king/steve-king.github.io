@@ -3,43 +3,52 @@
 
 html {
  	font-size: 62.5%; // Base font size = 10px
- 	//font-family: sans-serif;
- 	//-webkit-font-smoothing:antialiased;
+ 	font-family: 'PT Sans', sans-serif;
+ 	-webkit-font-smoothing:antialiased;
 }
 
 body {
-	background:#fff;
+	background:#666;
 
-	@include font-size(16);
+	@include font-size(14);
 	line-height:1.4;
 }
 
-.site-header {
-	background:$darkBG;
-	color:#fff;
-	line-height:$mobileHeaderHeight;
-	height:$mobileHeaderHeight;
-	position:fixed;
-	top:0;
-	left:0;
-	width:100%;
+
+.posts {
+	//padding:10px 5px;
 }
 
-.site-main {
-	margin-top:$mobileHeaderHeight;
+.post {
+	max-width:300px;
+	margin:5px;
+	float:left;
+
+	img {
+		width:100%;
+		height:auto;
+	}
+
+	.top-radius {
+		@include border-radius($borderRadius $borderRadius 0 0);
+	}
+
+	.post-content {
+		padding:10px;
+		background:#fff;
+		
+	}
+
+	.post-meta {
+		background:#222;
+		@include border-radius(0 0 $borderRadius $borderRadius);
+		color:#fff;
+		padding:10px;
+	}
 }
 
-@include respond-min(480) {
-	.site-header {
-		position:fixed;
-		width:$desktopHeaderWidth;
-		height:100%;
-	}
-
-	.site-main {
-		margin-top:0;
-		margin-left:$desktopHeaderWidth;
-	}
+h2 {
+	margin:0;
 }
 
 // .site-footer {

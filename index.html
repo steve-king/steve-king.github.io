@@ -2,13 +2,25 @@
 layout: default
 ---
 
-<ul class="posts">
+<div class="posts">
 	{% for post in site.posts %}
-	<li class="post-block">
+	<div class="post">
+		{% if post.image %}
+		<div class="post-image">
+			<img src="{{post.image}}" alt="{{post.title}}" class="top-radius" />
+		</div>
+		{% endif %}
+		<div class="post-content{% if post.image == nil %} top-radius{% endif %}">
+			<h2>{{ post.title }}</h2>
+			{{ post.content }}
+		</div>
+
+		<div class="post-meta">
 		<span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-		<a class="post-link" href="{{ post.url | prepend: baseurl }}">{{ post.title }}</a>
-		{{ post.content }}
-	</li>
+		<!-- <a class="post-link" href="{{ post.url | prepend: baseurl }}">{{ post.title }}</a> -->
+		</div>
+		
+	</div>
 	{% endfor %}
-</ul>
+</div>
 
