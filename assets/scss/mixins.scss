@@ -18,6 +18,12 @@
 	}
 }
 
+// Specify font size in px and also in rems for browsers that support it
+@mixin font-size($sizeValue: 1.6) {
+  font-size: $sizeValue + px;
+  font-size: ($sizeValue / 10) + rem;
+}
+
 @mixin transition($value){
 	-webkit-transition : $value;
 	-moz-transition : $value;
