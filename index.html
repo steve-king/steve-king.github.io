@@ -7,7 +7,6 @@ layout: default
 	<li class="post-block">
 		<span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
 		<a class="post-link" href="{{ post.url | prepend: baseurl }}">{{ post.title }}</a>
-		{{ post.content }}
 	</li>
 	{% endfor %}
 </ul>
