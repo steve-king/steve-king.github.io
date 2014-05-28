@@ -33,8 +33,8 @@ sk.getDOMSelectors = function(){
 sk.onResize = function(){
 
 	// Save the previous width and height (do we need these?)
-	sk.config.prevWidth = (sk.config.currentWidth != undefined) ? sk.config.currentWidth : sk.dom.$window.width();
-	sk.config.prevHeight = (sk.config.currentHeight != undefined) ? sk.config.currentHeight : sk.dom.$window.height();
+	sk.config.prevWidth = (sk.config.currentWidth !== undefined) ? sk.config.currentWidth : sk.dom.$window.width();
+	sk.config.prevHeight = (sk.config.currentHeight !== undefined) ? sk.config.currentHeight : sk.dom.$window.height();
 
 	// Save current width and height
 	sk.config.currentWidth  = sk.dom.$window.width();
