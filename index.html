@@ -6,10 +6,7 @@ layout: default
 	{% for post in site.posts %}
 	<div class="post">
 		<div class="post-inner">
-			<div class="post-meta">
-				<span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-				<!-- <a class="post-link" href="{{ post.url | prepend: baseurl }}">{{ post.title }}</a> -->
-			</div>
+			
 
 			{% if post.image %}
 			<div class="post-image">
@@ -19,6 +16,14 @@ layout: default
 			<div class="post-content{% if post.image == nil %} top-radius{% endif %}">
 				<h2>{{ post.title }}</h2>
 				{{ post.content }}
+				{% if post.link %}
+				<p><a href="{{post.link}}" class="btn" target="_blank">Visit site</a></p>
+				{% endif %}
+			</div>
+
+			<div class="post-meta">
+				<span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+				<!-- <a class="post-link" href="{{ post.url | prepend: baseurl }}">{{ post.title }}</a> -->
 			</div>
 		</div>
 	</div>

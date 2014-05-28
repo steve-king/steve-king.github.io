@@ -10,9 +10,35 @@ html {
 body {
 	background:#456;
 	background:url(../images/backgrounds/geometry1-tiled.jpg);
-	background-size:230px 227px;
+	background-attachment:fixed;
+	//background-size:230px 227px;
+	background-size:200px;
 	@include font-size(14);
 	line-height:1.4;
+}
+
+a {
+	text-decoration:none;
+	color:$linkColor;
+
+	&:hover {
+		text-decoration:underline;
+	}
+}
+
+.btn {
+	background:rgba(0,0,0,0.85);
+	color:#fff;
+	display:inline-block;
+	line-height:24px;
+	padding:0 10px;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-weight:700;
+
+	&:hover {
+		text-decoration:none;	
+	}
 }
 
 .site-header {
@@ -28,23 +54,32 @@ body {
 
 	.logo {
 
-		line-height:42px;
+		line-height:44px;
 		color:#fff;
 		color:#000;
 		@include font-size(45);
 		font-family:'Lobster', sans-serif;
 		display:inline-block;
-		width:52px;
-		height:52px;
+		width:50px;
+		height:50px;
 		background:#fff;
-		@include border-radius(26px);
+		background:url(../images/backgrounds/geometry1-tiled.jpg) 54% 16%;
+		background-size:500%;
+		@include border-radius(25px);
 		overflow:hidden;
 		text-align:center;
 		letter-spacing: -0.06em;
 		text-indent: -0.05em;
 		position:absolute;
-		top:8px;
-		left:8px;
+		top:10px;
+		left:10px;
+	}
+
+	.contact {
+		list-style:none;
+		margin:0;
+		padding:0;
+		float:right;
 	}
 
 	@include respond-min(420) {
@@ -60,23 +95,25 @@ body {
 	}
 }
 
+
+
 .posts-container {
-	margin:10px 10px;
+	margin:10px 5px;
 	padding-top:$headerSize;
 
 	@include respond-min(420) {
-		margin-left:$headerSize;
+		margin-left:$headerSize + 10px;
 		padding-top:0;
 		margin-top:0;
 	}
 
 	.post {
-		width:300px;
-		//margin:5px;
+		min-width:280px;
+		max-width:400px;
 		float:left;
 
 		.post-inner {
-			padding:10px;
+			padding:10px 10px;
 		}
 
 		img {
