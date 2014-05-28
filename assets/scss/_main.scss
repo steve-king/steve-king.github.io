@@ -16,38 +16,73 @@ body {
 
 
 .posts-container {
-	//padding:10px 5px;
+
+	.post {
+		width:300px;
+		//margin:5px;
+		float:left;
+
+		.post-inner {
+			padding:5px;
+		}
+
+		img {
+			width:100%;
+			height:auto;
+		}
+
+		.top-radius {
+			@include border-radius($borderRadius $borderRadius 0 0);
+		}
+
+		.post-content {
+			padding:10px 10px 1px;
+			background:rgba(255,255,255,0.9);
+		}
+
+		.post-meta {
+			background:rgba(0,0,0,0.9);
+			@include border-radius(0 0 $borderRadius $borderRadius);
+			color:#fff;
+			padding:5px 10px;
+			@include font-size(14);
+			//display:none;
+		}
+	}
+
+	&._1col {
+		.post {
+			width:100%;
+		}
+	}
+	&._2col {
+		.post {
+			width:50%;
+		}
+	}
+	&._3col {
+		.post {
+			width:33%;
+		}
+	}
+	&._4col {
+		.post {
+			width:25%;
+		}
+	}
+	&._5col {
+		.post {
+			width:20%;
+		}
+	}
+	&._6col {
+		.post {
+			width:16%;
+		}
+	}
 }
 
-.post {
-	width:300px;
-	margin:5px;
-	float:left;
 
-	img {
-		width:100%;
-		height:auto;
-	}
-
-	.top-radius {
-		@include border-radius($borderRadius $borderRadius 0 0);
-	}
-
-	.post-content {
-		padding:10px 10px 1px;
-		background:rgba(255,255,255,0.9);
-		
-	}
-
-	.post-meta {
-		background:rgba(0,0,0,0.9);
-		@include border-radius(0 0 $borderRadius $borderRadius);
-		color:#fff;
-		padding:5px 10px;
-		@include font-size(14);
-		//display:none;
-	}
-}
 
 h2 {
 	margin:0 0 5px;
