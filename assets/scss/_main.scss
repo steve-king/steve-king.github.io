@@ -10,12 +10,65 @@ html {
 body {
 	background:#456;
 	background:url(../images/backgrounds/geometry1-tiled.jpg);
+	background-size:230px 227px;
 	@include font-size(14);
 	line-height:1.4;
 }
 
+.site-header {
+	position:fixed;
+	top:0;
+	left:0;
+	height:$headerSize;
+	width:100%;
+	background:#000;
+	//background:rgba(0,0,0,0.85);
+	padding:0 20px;
+	z-index:1;
+
+	.logo {
+
+		line-height:42px;
+		color:#fff;
+		color:#000;
+		@include font-size(45);
+		font-family:'Lobster', sans-serif;
+		display:inline-block;
+		width:52px;
+		height:52px;
+		background:#fff;
+		@include border-radius(26px);
+		overflow:hidden;
+		text-align:center;
+		letter-spacing: -0.06em;
+		text-indent: -0.05em;
+		position:absolute;
+		top:8px;
+		left:8px;
+	}
+
+	@include respond-min(420) {
+		width:$headerSize;
+		height:100%;
+
+		.logo {
+			//@include transform(rotate(-90deg));
+			//@include transform-origin(50% 245%);
+			//width:200px;
+			//text-align:right;
+		}
+	}
+}
 
 .posts-container {
+	margin:10px 10px;
+	padding-top:$headerSize;
+
+	@include respond-min(420) {
+		margin-left:$headerSize;
+		padding-top:0;
+		margin-top:0;
+	}
 
 	.post {
 		width:300px;
@@ -23,7 +76,7 @@ body {
 		float:left;
 
 		.post-inner {
-			padding:5px;
+			padding:10px;
 		}
 
 		img {
@@ -37,11 +90,11 @@ body {
 
 		.post-content {
 			padding:10px 10px 1px;
-			background:rgba(255,255,255,0.9);
+			background:rgba(255,255,255,0.85);
 		}
 
 		.post-meta {
-			background:rgba(0,0,0,0.9);
+			background:rgba(0,0,0,0.85);
 			@include border-radius(0 0 $borderRadius $borderRadius);
 			color:#fff;
 			padding:5px 10px;

@@ -3,7 +3,7 @@ jQuery(document).ready(function($){
 	// Set config values
 	// Extension of the config stuff defined in footer.html
 	_.extend(sk.config, {
-		columnWidth : 250
+		columnWidth : 300
 	});
 
 	sk.init();
@@ -15,7 +15,7 @@ sk.init = function(){
 
 	// Resize event listener
 	sk.onResize();
-	$(window).on('resize', _.debounce(function(){		
+	sk.dom.$window.on('resize load', _.debounce(function(){		
 		sk.onResize();
 	}, 200));
 
