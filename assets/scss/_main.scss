@@ -9,7 +9,7 @@ html {
 
 body {
 	background:#456;
-
+	background:url(../images/backgrounds/geometry1-tiled.jpg);
 	@include font-size(14);
 	line-height:1.4;
 }
@@ -35,12 +35,12 @@ body {
 
 	.post-content {
 		padding:10px 10px 1px;
-		background:#fff;
+		background:rgba(255,255,255,0.9);
 		
 	}
 
 	.post-meta {
-		background:#222;
+		background:rgba(0,0,0,0.9);
 		@include border-radius(0 0 $borderRadius $borderRadius);
 		color:#fff;
 		padding:5px 10px;
