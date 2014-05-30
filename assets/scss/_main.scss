@@ -49,7 +49,7 @@ a {
 	width:100%;
 	background:#000;
 	//background:rgba(0,0,0,0.85);
-	padding:0 20px;
+	padding:0 15px;
 	z-index:1;
 
 	.logo {
@@ -72,14 +72,11 @@ a {
 		text-indent: -0.05em;
 		position:absolute;
 		top:10px;
-		left:10px;
+		left:15px;
 	}
 
 	.contact {
-		list-style:none;
-		margin:0;
-		padding:0;
-		float:right;
+		
 	}
 
 	@include respond-min(420) {
@@ -87,10 +84,76 @@ a {
 		height:100%;
 
 		.logo {
+			left:10px;
 			//@include transform(rotate(-90deg));
 			//@include transform-origin(50% 245%);
 			//width:200px;
 			//text-align:right;
+		}
+	}
+}
+
+.contact {
+
+	list-style:none;
+	margin:0;
+	padding:0;
+	float:right;
+	position:relative;
+	top:18px;
+
+	li {
+		float:left;
+		margin:0 0 0 10px;
+	}
+
+	a {
+		display:block;
+		width:$headerSize / 2;
+		height:$headerSize / 2;
+		@include border-radius($headerSize / 4);
+		background-color:#222;
+		background-position:center center;
+		background-repeat:no-repeat;
+		background-size:28px;
+
+		&:hover {
+			background-color:#333;
+		}
+	}
+
+	.icon {
+		font-size:60px;
+	}
+
+	// .icon-mail {
+	// 	background-image:url(../images/icons/email/email-48.png);
+	// }
+
+	// .icon-linkedin {
+	// 	background-image:url(../images/icons/linkedin/linkedin-48.png);
+	// }
+
+	// .icon-github {
+	// 	background-image:url(../images/icons/github/github-48.png);
+	// }
+
+	// .icon-twitter {
+	// 	background-image:url(../images/icons/twitter/twitter-48.png);
+	// }
+
+	// .icon-vimeo {
+	// 	background-image:url(../images/icons/vimeo/vimeo-48.png);
+	// }
+
+	@include respond-min(420) {
+		float:none;
+		top:70px;
+		left:2px;
+
+		li {
+			float:none;
+			margin:0 0 10px 0;
 		}
 	}
 }
