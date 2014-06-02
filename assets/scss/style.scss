@@ -7,7 +7,8 @@
 		"vendor/boilerplate";
 
 // Author styles
-@import "_main";
+@import "_icons",
+		"_main";
 
 // Helper classes/print styles
 @import "vendor/helpers",

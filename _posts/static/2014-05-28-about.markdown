@@ -1,0 +1,9 @@
+---
+permalink: index.html
+title:  "Hi"
+category: static
+link: http://stevek1ng.co.uk/CV_Steve_King.pdf
+link_text : View my CV
+---
+
+I'm Steve King and this is my Web Development portfolio.

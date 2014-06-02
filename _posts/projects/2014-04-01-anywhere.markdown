@@ -1,0 +1,10 @@
+---
+permalink: index.html
+title:  "Barclaycard Anywhere"
+image: assets/images/anywhere.jpg
+link: http://barclaycardanywhere.co.uk
+---
+
+A fully responsive microsite to promote Barclaycard's new mobile point of sale service for small business owners.
+
+The site is a feature rich experience with many animations, which are implemented progressively for those on desktop browsers. I was the sole developer on this project.

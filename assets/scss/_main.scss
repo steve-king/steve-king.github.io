@@ -1,36 +1,257 @@
 /* apply a natural box layout model to all elements */
 *, *:before, *:after {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
 
+html {
+ 	font-size: 62.5%; // Base font size = 10px
+ 	font-family: 'PT Sans', sans-serif;
+ 	-webkit-font-smoothing:antialiased;
+}
+
 body {
-	background:#fff;
+	background:#456;
+	background:url(../images/backgrounds/geometry1-tiled.jpg);
+	background-attachment:fixed;
+	//background-size:230px 227px;
+	background-size:200px;
+	@include font-size(14);
+	line-height:1.4;
+}
+
+a {
+	text-decoration:none;
+	color:$linkColor;
+
+	&:hover {
+		text-decoration:underline;
+	}
+}
+
+.btn {
+	background:rgba(0,0,0,0.85);
+	color:#fff;
+	display:inline-block;
+	line-height:24px;
+	padding:0 10px;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-weight:700;
+
+	&:hover {
+		text-decoration:none;	
+	}
 }
 
 .site-header {
-	background:$darkBG;
-	color:#fff;
-	line-height:$mobileHeaderHeight;
-	height:$mobileHeaderHeight;
 	position:fixed;
 	top:0;
 	left:0;
+	height:$headerSize;
 	width:100%;
-}
+	background:#000;
+	//background:rgba(0,0,0,0.85);
+	padding:0 15px;
+	z-index:1;
 
-.site-main {
-	margin-top:$mobileHeaderHeight;
-}
+	.logo {
 
-@include respond-min(480) {
-	.site-header {
-		position:fixed;
-		width:$desktopHeaderWidth;
+		line-height:44px;
+		color:#fff;
+		color:#000;
+		@include font-size(45);
+		font-family:'Lobster', sans-serif;
+		display:inline-block;
+		width:50px;
+		height:50px;
+		background:#fff;
+		background:url(../images/backgrounds/geometry1-tiled.jpg) 54% 16%;
+		background-size:500%;
+		@include border-radius(25px);
+		overflow:hidden;
+		text-align:center;
+		letter-spacing: -0.06em;
+		text-indent: -0.05em;
+		position:absolute;
+		top:10px;
+		left:15px;
+	}
+
+	.contact {
+		
+	}
+
+	@include respond-min(420) {
+		width:$headerSize;
 		height:100%;
+
+		.logo {
+			left:10px;
+			//@include transform(rotate(-90deg));
+			//@include transform-origin(50% 245%);
+			//width:200px;
+			//text-align:right;
+		}
+	}
+}
+
+.contact {
+
+	list-style:none;
+	margin:0;
+	padding:0;
+	float:right;
+	position:relative;
+	top:18px;
+
+	li {
+		float:left;
+		margin:0 0 0 10px;
 	}
 
-	.site-main {
-		margin-top:0;
-		margin-left:$desktopHeaderWidth;
+	a {
+		display:block;
+		width:$headerSize / 2;
+		height:$headerSize / 2;
+		@include border-radius($headerSize / 4);
+		background-color:#222;
+		background-position:center center;
+		background-repeat:no-repeat;
+		background-size:28px;
+
+		&:hover {
+			background-color:#333;
+		}
 	}
+
+	.icon {
+		font-size:60px;
+	}
+
+	// .icon-mail {
+	// 	background-image:url(../images/icons/email/email-48.png);
+	// }
+
+	// .icon-linkedin {
+	// 	background-image:url(../images/icons/linkedin/linkedin-48.png);
+	// }
+
+	// .icon-github {
+	// 	background-image:url(../images/icons/github/github-48.png);
+	// }
+
+	// .icon-twitter {
+	// 	background-image:url(../images/icons/twitter/twitter-48.png);
+	// }
+
+	// .icon-vimeo {
+	// 	background-image:url(../images/icons/vimeo/vimeo-48.png);
+	// }
+
+	@include respond-min(420) {
+		float:none;
+		top:70px;
+		left:2px;
+
+		li {
+			float:none;
+			margin:0 0 10px 0;
+		}
+	}
+}
+
+
+
+.posts-container {
+	margin:10px 5px;
+	padding-top:$headerSize;
+
+	@include respond-min(420) {
+		margin-left:$headerSize + 10px;
+		padding-top:0;
+		margin-top:0;
+	}
+
+	.post {
+		min-width:200px;
+		max-width:400px;
+		float:left;
+
+		.post-inner {
+			padding:10px 10px;
+		}
+
+		img {
+			width:100%;
+			height:auto;
+		}
+
+		.top-radius {
+			@include border-radius($borderRadius $borderRadius 0 0);
+		}
+
+		.post-content {
+			padding:10px 10px 1px;
+			background:rgba(255,255,255,0.9);
+		}
+
+		.post-meta {
+			background:rgba(0,0,0,0.85);
+			@include border-radius(0 0 $borderRadius $borderRadius);
+			color:#fff;
+			padding:5px 10px;
+			@include font-size(14);
+			//display:none;
+		}
+
+		&.dark {
+			.post-content {
+				background:rgba(0,0,0,0.85);
+				color:#ddd;
+			}
+		}
+	}
+
+
+
+	&._1col {
+		.post {
+			width:100%;
+		}
+	}
+	&._2col {
+		.post {
+			width:50%;
+		}
+	}
+	&._3col {
+		.post {
+			width:33%;
+		}
+	}
+	&._4col {
+		.post {
+			width:25%;
+		}
+	}
+	&._5col {
+		.post {
+			width:20%;
+		}
+	}
+	&._6col {
+		.post {
+			width:16%;
+		}
+	}
+}
+
+
+
+h2 {
+	margin:0 0 5px;
+}
+
+p {
+	margin-top:0;
 }
 
 // .site-footer {

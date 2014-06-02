@@ -1,9 +1,16 @@
 // Colours
 $darkBG : #333;
+$linkColor:#d40000;
+
+// Values
+$borderRadius:0;
 
 // Element dimensions
-$mobileHeaderHeight:50px;
-$desktopHeaderWidth:200px;
+$headerSize:70px;
 
 // Breakpoints
-$breakpoints: 0,320,480,640,800,960,1024;
+$breakpoints: 0,320,420,480,640,800,960,1024;
+
+
+
+

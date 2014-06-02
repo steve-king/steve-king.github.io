@@ -1,0 +1,48 @@
+// http://www.entypo.com/characters/
+
+@font-face {
+	font-family: 'entypo';
+	src:url('../fonts/entypo/entypo.eot?-673jhn');
+	src:url('../fonts/entypo/entypo.eot?#iefix-673jhn') format('embedded-opentype'),
+		url('../fonts/entypo/entypo.woff?-673jhn') format('woff'),
+		url('../fonts/entypo/entypo.ttf?-673jhn') format('truetype'),
+		url('../fonts/entypo/entypo.svg?-673jhn#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'entypo-social';
+	src:url('../fonts/entypo-social/entypo-social.eot?-673jhn');
+	src:url('../fonts/entypo-social/entypo-social.eot?#iefix-673jhn') format('embedded-opentype'),
+		url('../fonts/entypo-social/entypo-social.woff?-673jhn') format('woff'),
+		url('../fonts/entypo-social/entypo-social.ttf?-673jhn') format('truetype'),
+		url('../fonts/entypo-social/entypo-social.svg?-673jhn#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'entypo';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-email:before {
+	font-family: 'entypo';
+	content: "\2709";
+}
+
+.icon-github:before {
+	font-family: 'entypo-social';
+	content: "\f300";
+}
+

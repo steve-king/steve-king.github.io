@@ -17,10 +17,9 @@ module.exports = function(grunt) {
       options: {
         smarttabs: true
       },
-      src: ['assets/js/*.js',
-            'assets/js/**/*.js',
+      src: ['assets/js/**/*.js',
             '!assets/js/vendor/*.js',
-            '!assets/js/plugins/*.js',
+            '!assets/js/plugins.js',
             '!assets/js/plugins/**/*.js']
     },
     imagemin : {
@@ -45,33 +44,29 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      sass : {
-        files: ['assets/scss/*.scss',
-                'assets/scss/*/*.scss'],
-        tasks: ['sass']
-      },
-      js : {
-        files: ['assets/js/*.js',
-              'assets/js/**/*.js',
+      scripts : {
+        files: ['assets/js/**/*.js',
               '!assets/js/vendor/*.js',
               '!assets/js/plugins/*.js'],
         tasks: ['jshint']
       },
-      imagemin : {
+      css : {
+        files: ['assets/scss/*.scss',
+                'assets/scss/*/*.scss'],
+        tasks: ['sass']
+      },
+      images : {
         files: ['assets/images/**/*.{png,jpg,gif}'],
         tasks: ['crunch']
       },
-      shell : {
+      jekyll : {
         files: ['**/*.markdown',
+                '**/**/*.markdown',
                 '**/*.html',
                 'assets/**/*.{png,jpg,gif,css,js}',
                 '_config.yml',
                 '!_site/**/*'],
-        tasks: ['shell:jekyllBuild'],
-        options: {
-            interrupt: true,
-            atBegin: true
-        }
+        tasks: ['shell:jekyllBuild']
       }
     },
   });
