@@ -2,7 +2,16 @@
 layout: post
 title:  "LifeSkills"
 image: assets/images/lifeskills.jpg
+link: https://www.barclayslifeskills.com/
+link_text: Visit site
 ---
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+My task was to build a a re-usable javascript framework on top of which a series of responsive, interactive "quiz" modules were built. I chose the <a href="http://backbonejs.org/" target="_blank">backbone.js</a> framework for this due to it's inherent flexibility. The modules include:
+
+- <a href="https://www.barclayslifeskills.com/key-skills/putting-your-people-skills-into-practice/the-workplace-challenge/" target="_blank">The Workplace Challenge</a>
+- <a href="https://www.barclayslifeskills.com/key-skills/growing-your-people-skills/rate-your-skills/" target="_blank">Rate Your Skills</a>
+- <a href="https://www.barclayslifeskills.com/key-skills/discovering-your-people-skills/know-your-skills/" target="_blank">Know Your Skills</a>
+- <a href="https://www.barclayslifeskills.com/key-skills/understanding-money-basics/your-money-personality/" target="_blank">Your Money Personality</a>
+- <a href="https://www.barclayslifeskills.com/key-skills/getting-to-grips-with-money-and-banking-words/money-talks/" target="_blank">Money Talks</a>
+- <a href="https://www.barclayslifeskills.com/key-skills/spending-saving-and-borrowing-money/make-it-through-the-month/" target="_blank">Make it Through the Month</a>
 
