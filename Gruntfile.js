@@ -55,10 +55,10 @@ module.exports = function(grunt) {
                 'assets/scss/*/*.scss'],
         tasks: ['sass']
       },
-      images : {
-        files: ['assets/images/**/*.{png,jpg,gif}'],
-        tasks: ['crunch']
-      },
+      //images : {
+      //  files: ['assets/images/**/*.{png,jpg,gif}'],
+      //  tasks: ['crunch']
+      //},
       jekyll : {
         files: ['**/*.markdown',
                 '**/**/*.markdown',

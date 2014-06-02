@@ -36,13 +36,38 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-email:before {
+.icon-plus:before {
+	font-family:'entypo';
+	content:'\2795';
+}
+
+.icon-mail:before {
 	font-family: 'entypo';
 	content: "\2709";
+}
+
+.icon-phone:before {
+	font-family: 'entypo';
+	content: "\1F4DE";
+}
+
+.icon-linkedin:before {
+	font-family: 'entypo-social';
+	content: "\F318";
 }
 
 .icon-github:before {
 	font-family: 'entypo-social';
 	content: "\f300";
+}
+
+.icon-twitter:before {
+	font-family: 'entypo-social';
+	content: "\F309";
+}
+
+.icon-vimeo:before {
+	font-family: 'entypo-social';
+	content: "\F306";
 }
 
