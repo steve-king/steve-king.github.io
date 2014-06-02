@@ -1,5 +1,5 @@
 ---
-layout: post
+permalink: index.html
 title: Lunar Guard (Flash game)
 link_text: Play game
 ---

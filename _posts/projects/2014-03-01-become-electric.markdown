@@ -1,5 +1,5 @@
 ---
-layout: post
+permalink: index.html
 title:  "Become Electric"
 image: assets/images/become-electric.jpg
 link: http://becomeelectric.co.uk

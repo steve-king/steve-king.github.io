@@ -1,5 +1,5 @@
 ---
-layout: post
+permalink: index.html
 title:  "Dennis Christensen"
 image : assets/images/dennis.jpg
 link: http://dennismchristensen.com

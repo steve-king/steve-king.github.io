@@ -1,5 +1,5 @@
 ---
-layout: post
+permalink: index.html
 title:  "Grow Africa"
 link: http://growafrica.com/
 link_text: Visit site

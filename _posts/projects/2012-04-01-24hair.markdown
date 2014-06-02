@@ -1,5 +1,5 @@
 ---
-layout: post
+permalink: index.html
 title: 24 Hair & beauty
 link: http://24hairandbeautysalon.com/
 link_text: Visit site

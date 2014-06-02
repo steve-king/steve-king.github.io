@@ -1,5 +1,5 @@
 ---
-layout: post
+permalink: index.html
 title:  "Kiss FM Radio Player"
 link: http://radioplayer.kissfmuk.com/
 link_text: Visit site

@@ -1,5 +1,5 @@
 ---
-layout: post
+permalink: index.html
 title:  "Hi"
 category: static
 link: http://stevek1ng.co.uk/CV_Steve_King.pdf

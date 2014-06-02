@@ -1,5 +1,5 @@
 ---
-layout: Post
+permalink: index.html
 Title: Kelly Security
 link: http://locksmithsinlondon4u.co.uk/
 link_text: Visit site

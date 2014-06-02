@@ -1,5 +1,5 @@
 ---
-layout: post
+permalink: index.html
 Title: Michael Dowell
 link: http://michaeldowell.com
 link_text: Visit site

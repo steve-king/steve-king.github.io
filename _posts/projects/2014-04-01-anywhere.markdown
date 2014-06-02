@@ -1,5 +1,5 @@
 ---
-layout: post
+permalink: index.html
 title:  "Barclaycard Anywhere"
 image: assets/images/anywhere.jpg
 link: http://barclaycardanywhere.co.uk

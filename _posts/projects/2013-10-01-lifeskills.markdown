@@ -1,5 +1,5 @@
 ---
-layout: post
+permalink: index.html
 title:  "LifeSkills"
 image: assets/images/lifeskills.jpg
 link: https://www.barclayslifeskills.com/

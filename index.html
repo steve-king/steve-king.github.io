@@ -4,54 +4,33 @@ layout: default
 
 <div class="posts-container">
 
-
 	{% for post in site.posts %}
-	{% if post.category == "static"%}
-	<div class="post dark">
-		<div class="post-inner">
+		{% if post.category == "static"%}
+			<div class="post dark">
+				<div class="post-inner">
 
-			{% if post.image %}
-			<div class="post-image">
-				<img src="{{post.image}}" alt="{{post.title}}" class="top-radius" />
+					{% if post.image %}
+					<div class="post-image">
+						<img src="{{post.image}}" alt="{{post.title}}" class="top-radius" />
+					</div>
+					{% endif %}
+					<div class="post-content{% if post.image == nil %} top-radius{% endif %}">
+						<h2>{{ post.title }}</h2>
+						{{ post.content }}
+						{% if post.link %}
+						<p><a href="{{post.link}}" class="btn" target="_blank">{{post.link_text}}</a></p>
+						{% endif %}
+					</div>
+				</div>
 			</div>
-			{% endif %}
-			<div class="post-content{% if post.image == nil %} top-radius{% endif %}">
-				<h2>{{ post.title }}</h2>
-				{{ post.content }}
-				{% if post.link %}
-				<p><a href="{{post.link}}" class="btn" target="_blank">{{post.link_text}}</a></p>
-				{% endif %}
-			</div>
-		</div>
-	</div>
-	{% endif %}
+		{% endif %}
 	{% endfor %}
 
 	{% for post in site.posts %}
-	{% if post.category != "static"%}
-	<div class="post">
-		<div class="post-inner">
-
-			{% if post.image %}
-			<div class="post-image">
-				<img src="{{post.image}}" alt="{{post.title}}" class="top-radius" />
-			</div>
-			{% endif %}
-			<div class="post-content{% if post.image == nil %} top-radius{% endif %}">
-				<h2>{{ post.title }}</h2>
-				{{ post.content }}
-				{% if post.link %}
-				<p><a href="{{post.link}}" class="btn" target="_blank">Visit site</a></p>
-				{% endif %}
-			</div>
-
-			<div class="post-meta">
-				<span class="post-date">{{ post.date | date: "%B %Y" }}</span>
-				<!-- <a class="post-link" href="{{ post.url | prepend: baseurl }}">{{ post.title }}</a> -->
-			</div>
-		</div>
-	</div>
-	{% endif %}
+		{% if post.category != "static"%}
+			{% include post.html %}
+		{% endif %}
 	{% endfor %}
+
 </div>
 
