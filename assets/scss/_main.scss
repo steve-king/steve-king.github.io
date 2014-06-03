@@ -11,6 +11,8 @@ body {
 	background:#456;
 	background:url($backgroundImage);
 	background-attachment:fixed;
+	background-position:center center;
+	//background-size:contain;
 	//background-size:230px 227px;
 	//background-size:200px;
 	@include font-size(14);
@@ -64,8 +66,8 @@ a {
 		height:50px;
 		background:#fff;
 		background:url($backgroundImage);// 54% 16%;
-		//background-size:100%;
-		background-position:-15px -10px;
+		background-size:cover;
+		background-position:center center;
 		@include border-radius(25px);
 		overflow:hidden;
 		text-align:center;
