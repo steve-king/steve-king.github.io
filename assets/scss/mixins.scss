@@ -53,3 +53,11 @@
 	-o-border-radius:$value;
 	border-radius:$value;
 }
+
+@mixin filter($value){
+	-moz-filter:$value;
+	-webkit-filter:$value;
+	-o-filter:$value;
+	-ms-filter:$value;
+	filter:$value;
+}

@@ -7,12 +7,22 @@ html {
  	-webkit-font-smoothing:antialiased;
 }
 
+.trans_black {
+	background:#000;
+	background:rgba(0,0,0,0.85);
+}
+
+.trans_white {
+	background:#fff;
+	background:rgba(255,255,255,0.9);
+}
+
 body {
 	background:#456;
 	background:url($backgroundImage);
 	background-attachment:fixed;
-	background-position:center center;
-	//background-size:contain;
+	//background-position:center center;
+	background-size:cover;
 	//background-size:230px 227px;
 	//background-size:200px;
 	@include font-size(14);
@@ -29,7 +39,7 @@ a {
 }
 
 .btn {
-	background:rgba(0,0,0,0.85);
+	@extend .trans_black;
 	color:#fff;
 	display:inline-block;
 	line-height:24px;
@@ -49,10 +59,27 @@ a {
 	left:0;
 	height:$headerSize;
 	width:100%;
-	background:#000;
-	background:rgba(0,0,0,0.8);
+	
 	padding:0 15px;
 	z-index:1;
+
+	@extend .trans_black;
+
+	background:url(../svg/blur.svg#blur); 
+
+
+	// &:before {
+	// 	content:"";
+	// 	position:absolute;
+	// 	top:0;
+	// 	left:0;
+	// 	width:100%;
+	// 	height:100%;
+	// 	background:url($backgroundImage);
+	// 	background-attachment:fixed;
+	// 	@include filter(blur(5px));
+	// 	opacity:0.5;
+	// }
 
 	.logo {
 
@@ -64,10 +91,10 @@ a {
 		display:inline-block;
 		width:50px;
 		height:50px;
-		background:#fff;
-		background:url($backgroundImage);// 54% 16%;
-		background-size:cover;
-		background-position:center center;
+		background:#dddddd;
+		//background:url($backgroundImage);// 54% 16%;
+		//background-size:cover;
+		//background-position:center center;
 		@include border-radius(25px);
 		overflow:hidden;
 		text-align:center;
@@ -117,7 +144,7 @@ a {
 		height:$headerSize / 2;
 		line-height:$headerSize / 2;
 		@include border-radius($headerSize / 4);
-		background-color:teal;
+		background:#dddddd;
 		//background:url(../images/backgrounds/geometry1-tiled.jpg) 54% 16%;
 		//background-size:500%;
 		color:#000;
@@ -158,6 +185,7 @@ a {
 .posts-container {
 	margin:10px 5px;
 	padding-top:$headerSize;
+	max-width:960px;
 
 	@include respond-min(420) {
 		margin-left:$headerSize + 10px;
@@ -167,7 +195,7 @@ a {
 
 	.post {
 		min-width:200px;
-		max-width:400px;
+		max-width:480px;
 		float:left;
 
 		.post-inner {
@@ -185,11 +213,12 @@ a {
 
 		.post-content {
 			padding:10px 10px 1px;
-			background:rgba(255,255,255,0.9);
+			
+			@extend .trans_white;
 		}
 
 		.post-meta {
-			background:rgba(0,0,0,0.85);
+			@extend .trans_black;
 			@include border-radius(0 0 $borderRadius $borderRadius);
 			color:#fff;
 			padding:5px 10px;
@@ -199,7 +228,7 @@ a {
 
 		&.dark {
 			.post-content {
-				background:rgba(0,0,0,0.85);
+				@extend .trans_black;
 				color:#ddd;
 			}
 		}
