@@ -4,7 +4,7 @@ title:  "Hi"
 category: static
 link: http://downloads.steveking.info/cv.pdf
 link_text : View my CV
-image: assets/images/me.png
+image: assets/images/desk.jpg
 ---
 
 I'm Steve King and this is my Web Development portfolio.
