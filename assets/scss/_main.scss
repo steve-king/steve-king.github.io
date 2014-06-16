@@ -14,19 +14,34 @@ html {
 
 .trans_white {
 	background:#fff;
-	background:rgba(255,255,255,0.9);
+	background:rgba(255,255,255,0.5);
+}
+
+.neon_gradient {
+	background:
+		linear-gradient(limegreen,transparent),
+		linear-gradient(90deg,skyblue,transparent),
+		linear-gradient(-90deg,coral,transparent);
+	background-blend-mode: screen;
 }
 
 body {
-	background:#456;
-	background:url($backgroundImage);
-	background-attachment:fixed;
-	//background-position:center center;
-	background-size:cover;
-	//background-size:230px 227px;
-	//background-size:200px;
+	// background:#2f2f2f url($backgroundImage);
+	// background-attachment:fixed;
+	// background-repeat:repeat-y;
+
+	//@extend .neon_gradient;
+	
+
 	@include font-size(14);
 	line-height:1.4;
+}
+
+.site-main {
+	@extend .neon_gradient;
+	height:100%;
+	overflow-y:scroll;
+	background-attachment:fixed;
 }
 
 a {
@@ -91,7 +106,7 @@ a {
 		display:inline-block;
 		width:50px;
 		height:50px;
-		background:#dddddd;
+		//background:#dddddd;
 		//background:url($backgroundImage);// 54% 16%;
 		//background-size:cover;
 		//background-position:center center;
@@ -103,6 +118,9 @@ a {
 		position:absolute;
 		top:10px;
 		left:15px;
+
+		background:coral;
+		color:#000;
 	}
 
 	.contact {
@@ -115,7 +133,7 @@ a {
 
 		.logo {
 			left:10px;
-			background-position:-10px -10px;
+			//background-position:-10px -10px;
 			//@include transform(rotate(-90deg));
 			//@include transform-origin(50% 245%);
 			//width:200px;
@@ -144,15 +162,17 @@ a {
 		height:$headerSize / 2;
 		line-height:$headerSize / 2;
 		@include border-radius($headerSize / 4);
-		background:#dddddd;
+		//background:#dddddd;
 		//background:url(../images/backgrounds/geometry1-tiled.jpg) 54% 16%;
 		//background-size:500%;
 		color:#000;
 		text-align:center;
 		overflow:hidden;
 
+		background:skyblue;
+
 		&:hover {
-			background-color:lighten(teal, 10%);
+			//background-color:lighten(teal, 10%);
 			text-decoration:none;
 		}
 	}
