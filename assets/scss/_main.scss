@@ -81,7 +81,7 @@ a {
 	padding:0 15px;
 	z-index:1;
 
-	background:rgba(255,255,255,0.9);
+	background:rgba(255,255,255,0.8);
 
 	
 
@@ -122,7 +122,8 @@ a {
 		top:10px;
 		left:15px;
 
-		background:coral;
+		//background:coral;
+		//background:rgba(#fff, 0.7);
 		color:rgba(0,0,0,0.6);
 
 		//-webkit-mask-image: url(../images/backgrounds/blurred.png);
@@ -175,11 +176,16 @@ a {
 		text-align:center;
 		overflow:hidden;
 
-		background:skyblue;
+		
+		//border:1px solid rgba(0,0,0,0.6);
+		//background:#fde572;
+		//background:coral;
+		color:rgba(0,0,0,0.6);
 
 		&:hover {
 			//background-color:lighten(teal, 10%);
 			text-decoration:none;
+			background:rgba(#fff, 0.7);
 		}
 	}
 
