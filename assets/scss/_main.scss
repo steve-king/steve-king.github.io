@@ -30,7 +30,7 @@ html {
 
 body {
 	background:url(../images/backgrounds/blurred.png) no-repeat center center fixed;
-	background-size:cover;
+	background-size:100% 100%;
 
 	@include font-size($baseFontSize);
 }
