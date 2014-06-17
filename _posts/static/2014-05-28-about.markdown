@@ -4,7 +4,7 @@ publish : true
 title:  "Hi"
 category: static
 link: http://downloads.steveking.info/cv.pdf
-link_text : View my CV
+link_text : Get my CV
 image: assets/images/desk.jpg
 ---
 
