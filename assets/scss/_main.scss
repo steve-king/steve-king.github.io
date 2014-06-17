@@ -7,8 +7,6 @@ html {
  	font-weight:light;
  	-webkit-font-smoothing:antialiased;
  	color:rgba(0,0,0,0.75);
-
- 	
 }
 
 .trans_black {
@@ -30,23 +28,27 @@ html {
 }
 
 body {
-	// background:url(../images/backgrounds/blurred.png) no-repeat center center fixed;
-	// background-size:cover;
+	//background:url(../images/backgrounds/blurred.png) no-repeat center center fixed;
+	//background-size:cover;
 	//background-size:100% 100%;
 
 	@include font-size(14);
 	line-height:1.4;
+}
 
+.bg {
+	position:fixed;
+	overflow: hidden;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
 	background:url(../images/backgrounds/blurred.png) no-repeat center center fixed;
 	background-size:cover;
-	height:100%;
-	overflow:hidden;
 }
 
 .site-main {
-	height:100%;
-	overflow: scroll;
-	-webkit-overflow-scrolling: touch;
+
 }
 
 a {
