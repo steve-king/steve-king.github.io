@@ -145,6 +145,7 @@ a {
 	float:right;
 	position:relative;
 	top:18px;
+	@include font-size(22);
 
 	li {
 		float:left;
@@ -152,39 +153,60 @@ a {
 	}
 
 	a {
+
+		$iconSize : 34px;
+
 		display:block;
-		width:$headerSize / 2;
-		height:$headerSize / 2;
-		line-height:$headerSize / 2;
-		@include border-radius($headerSize / 4);
-		//background:#dddddd;
-		//background:url(../images/backgrounds/geometry1-tiled.jpg) 54% 16%;
-		//background-size:500%;
+		width:$iconSize;
+		height:$iconSize;
+		line-height:$iconSize;
+		@include border-radius($iconSize / 2);
 		color:#000;
 		text-align:center;
 		overflow:hidden;
-
-		
-		//border:1px solid rgba(0,0,0,0.6);
-		//background:#fde572;
-		//background:coral;
 		color:rgba(0,0,0,0.75);
 
 		&:hover {
-			//background-color:lighten(teal, 10%);
 			text-decoration:none;
 			background:rgba(#fff, 0.7);
 		}
 	}
 
 	.icon {
-		font-size:45px;
+		
 		position:relative;
-		top:-0.11em;
+		
+		&.icon-mail {
+			font-size:1.05em;
+		}
 
 		&.icon-linkedin {
-			font-size:40px;
-			top:-0.1em;
+			top:0.05em;
+			font-size:1.15em;
+		}
+
+		&.icon-github {
+			top:0.1em;
+		}
+
+		&.icon-github2 {
+			font-size:1.1em;
+			top:0.11em;
+		}
+
+		&.icon-github3 {
+			top:0.15em;
+		}
+
+		&.icon-github4 {
+			font-size:1.15em;
+			top:0.15em;
+			left:0.065em;
+		}
+
+		&.icon-twitter {
+			top:0.05em;
+			font-size:1.1em;
 		}
 	}
 
