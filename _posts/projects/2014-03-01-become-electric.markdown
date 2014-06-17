@@ -1,4 +1,5 @@
 ---
+publish : true
 permalink: index.html
 title:  "Become Electric"
 image: assets/images/become-electric.jpg

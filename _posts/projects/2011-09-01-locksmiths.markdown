@@ -1,4 +1,5 @@
 ---
+publish : true
 permalink: index.html
 Title: Kelly Security
 link: http://locksmithsinlondon4u.co.uk/

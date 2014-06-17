@@ -1,4 +1,5 @@
 ---
+publish : true
 permalink: index.html
 title:  "Dennis Christensen"
 image : assets/images/dennis.jpg

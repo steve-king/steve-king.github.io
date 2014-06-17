@@ -1,4 +1,5 @@
 ---
+publish : true
 permalink: index.html
 title:  "LifeSkills"
 image: assets/images/lifeskills.jpg

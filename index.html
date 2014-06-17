@@ -5,7 +5,7 @@ layout: default
 <div class="posts-container">
 
 	{% for post in site.posts %}
-		{% if post.category == "static"%}
+		{% if post.category == "static" and post.publish == true %}
 			<div class="post dark">
 				<div class="post-inner">
 
@@ -27,7 +27,7 @@ layout: default
 	{% endfor %}
 
 	{% for post in site.posts %}
-		{% if post.category != "static"%}
+		{% if post.category != "static" and post.publish == true %}
 			{% include post.html %}
 		{% endif %}
 	{% endfor %}

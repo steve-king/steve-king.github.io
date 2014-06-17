@@ -1,4 +1,5 @@
 ---
+publish : true
 permalink: index.html
 title:  "Nina Turner"
 image : assets/images/ninaturner.jpg

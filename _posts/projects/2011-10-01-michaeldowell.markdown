@@ -1,4 +1,5 @@
 ---
+publish : true
 permalink: index.html
 Title: Michael Dowell
 link: http://michaeldowell.com

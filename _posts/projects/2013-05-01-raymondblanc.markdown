@@ -1,4 +1,5 @@
 ---
+publish : true
 permalink: index.html
 title:  "Raymond Blanc"
 #image: assets/images/lifeskills.jpg

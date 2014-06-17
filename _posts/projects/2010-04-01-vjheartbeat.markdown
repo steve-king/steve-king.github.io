@@ -1,4 +1,5 @@
 ---
+publish : true
 permalink: index.html
 title: VJ Heartbeat
 link_text: Visit site

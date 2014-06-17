@@ -1,4 +1,5 @@
 ---
+publish : true
 permalink: index.html
 title:  "Barclaycard Anywhere"
 image: assets/images/anywhere.jpg

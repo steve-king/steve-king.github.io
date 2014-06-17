@@ -1,4 +1,5 @@
 ---
+publish : true
 permalink: index.html
 title:  "Bauer Media"
 image: assets/images/bauer.jpg

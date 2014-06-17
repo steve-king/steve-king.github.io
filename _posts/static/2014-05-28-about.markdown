@@ -1,5 +1,6 @@
 ---
 permalink: index.html
+publish : true
 title:  "Hi"
 category: static
 link: http://downloads.steveking.info/cv.pdf
