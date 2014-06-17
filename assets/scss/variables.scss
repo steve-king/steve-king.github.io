@@ -1,7 +1,7 @@
 // Colours
 $color_black : #333;
-$linkColor:coral;
-
+$linkColor:darken(skyblue, 30%);
+//$linkColor:#666;
 $baseFontSizePx : 14px;
 $baseFontSize : 14;
 
@@ -17,7 +17,4 @@ $headerSize:70px;
 
 // Breakpoints
 $breakpoints: 0,320,420,480,640,800,960,1024;
-
-
-
 

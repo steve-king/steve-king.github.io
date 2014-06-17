@@ -37,7 +37,14 @@ body {
 
 
 .site-main {
+	margin:0 $baseFontSizePx/2;
+	padding:$headerSize + ($baseFontSizePx/2) 0;
+	max-width:960px;
 
+	@include respond-min(420) {
+		margin-left:$headerSize + ($baseFontSizePx / 2);
+		padding-top:$baseFontSizePx/2;
+	}
 }
 
 a {
@@ -263,14 +270,7 @@ a {
 }
 
 .posts-container {
-	margin:0 $baseFontSizePx/2;
-	padding:$headerSize + ($baseFontSizePx/2) 0;
-	max-width:960px;
-
-	@include respond-min(420) {
-		margin-left:$headerSize + ($baseFontSizePx / 2);
-		padding-top:$baseFontSizePx/2;
-	}
+	
 
 	.post {
 		min-width:200px;
@@ -394,6 +394,20 @@ h2 {
 
 p {
 	margin-top:0;
+}
+
+footer {
+	
+	@include respond-min(420) {
+		margin-left:$headerSize;
+		padding-top:$baseFontSizePx/2;
+	}
+
+	 p {
+	 	@include font-size(12);
+	 	margin:$baseFontSizePx 0;
+	 	text-align:center;
+	 }
 }
 
 // .site-footer {
