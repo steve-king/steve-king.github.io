@@ -8,10 +8,7 @@ html {
  	-webkit-font-smoothing:antialiased;
  	color:rgba(0,0,0,0.75);
 
- 	background:url(../images/backgrounds/blurred.png) no-repeat center center fixed;
-	background-size:cover;
-	height:100%;
-	overflow:hidden;
+ 	
 }
 
 .trans_black {
@@ -40,13 +37,16 @@ body {
 	@include font-size(14);
 	line-height:1.4;
 
+	background:url(../images/backgrounds/blurred.png) no-repeat center center fixed;
+	background-size:cover;
 	height:100%;
-	overflow: scroll;
-	-webkit-overflow-scrolling: touch;
+	overflow:hidden;
 }
 
 .site-main {
-
+	height:100%;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
 }
 
 a {
