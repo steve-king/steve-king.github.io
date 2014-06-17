@@ -7,6 +7,11 @@ html {
  	font-weight:light;
  	-webkit-font-smoothing:antialiased;
  	color:rgba(0,0,0,0.75);
+
+ 	background:url(../images/backgrounds/blurred.png) no-repeat center center fixed;
+	background-size:cover;
+	height:100%;
+	overflow:hidden;
 }
 
 .trans_black {
@@ -28,25 +33,20 @@ html {
 }
 
 body {
-	// background:#2f2f2f url($backgroundImage);
-	background:url(../images/backgrounds/blurred.png) no-repeat center center fixed;
-	background-size:100% 100%;
-	//background-attachment:fixed;
-
-	// background-repeat:repeat-y;
-
-	//@extend .neon_gradient;
-	
+	// background:url(../images/backgrounds/blurred.png) no-repeat center center fixed;
+	// background-size:cover;
+	//background-size:100% 100%;
 
 	@include font-size(14);
 	line-height:1.4;
+
+	height:100%;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
 }
 
 .site-main {
-	//@extend .neon_gradient;
-	//height:100%;
-	//overflow-y:scroll;
-	//background-attachment:fixed;
+
 }
 
 a {
@@ -59,8 +59,6 @@ a {
 }
 
 .btn {
-	//@extend .trans_black;
-	//color:#fff;
 	background: rgba(255,255,255,0.6);
 	color: rgba(0,0,0,0.75);
 	
@@ -72,7 +70,7 @@ a {
 	font-weight:bold;
 	font-size:1.2em;
 
-	border-radius:4px;
+	@include border-radius(4px);
 
 	&:hover {
 		text-decoration:none;	
@@ -109,7 +107,6 @@ a {
 		font-style:italic;
 		@include font-size(50);
 		line-height:46px;
-		
 		display:inline-block;
 		position:absolute;
 		top:10px;
@@ -128,11 +125,6 @@ a {
 
 		.logo {
 			left:10px;
-			//background-position:-10px -10px;
-			//@include transform(rotate(-90deg));
-			//@include transform-origin(50% 245%);
-			//width:200px;
-			//text-align:right;
 		}
 	}
 }
@@ -259,19 +251,34 @@ a {
 
 		.post-content {
 			padding:10px 10px 1px;
-			
 			@extend .trans_white;
 		}
 
 		.post-meta {
-			@extend .trans_black;
-			background: rgba(255,255,255,0.3);
+			background: rgba(255,255,255,0.25);
 			@include border-radius(0 0 $borderRadius $borderRadius);
-			color:rgba(0,0,0,0.3);
-			color:rgba(255,255,255,0.8);
+			color:#fff;
 			padding:5px 10px;
 			@include font-size(14);
-			//display:none;
+
+			.icon-clock {
+				font-size:1.2em;
+				//font-weight:bold;
+				position:relative;
+				top:0.05em;
+			}
+
+			.icon-calendar1 {
+				font-size:1.2em;
+				position:relative;
+				top:0.05em;
+			}
+
+			.icon-calendar2 {
+				font-size:1.3em;
+				position:relative;
+				top:0.05em;
+			}
 		}
 
 		&.dark {
