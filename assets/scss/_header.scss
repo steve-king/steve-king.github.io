@@ -31,6 +31,8 @@
 	
 	color:rgba(0,0,0,0.7);
 
+	padding-left:4px;
+
 	&:hover {
 		color:rgba(0,0,0,0.85);
 		text-decoration:none;
@@ -40,6 +42,7 @@
 		width:$headerSize;
 		text-align:center;
 		float:none;
+		padding-left:0;
 	}
 }
 
@@ -62,7 +65,7 @@
 
 	li {
 		float:left;
-		margin:0 0 0 10px;
+		margin:0 0 0 $fontSizePx;
 	}
 
 	a {
@@ -92,12 +95,12 @@
 		
 		&.icon-mail {
 			font-size:1.05em;
-			//top:-0.03em;
+			top:0.05em;
 		}
 
 		&.icon-linkedin {
 			//top:0.05em;
-			font-size:1.15em;
+			font-size:1.22em;
 		}
 
 		&.icon-github {
@@ -139,7 +142,7 @@
 
 		li {
 			float:none;
-			margin:5px 0 5px 0;
+			margin:$fontSizePx/2 0;
 			text-align:center;
 		}
 	}

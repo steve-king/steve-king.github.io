@@ -20,6 +20,7 @@ sk.init = function(){
 	}, 200));
 
 	sk.postsLayout();
+	sk.mailTo();
 };
 
 // Grab all the jQuery DOM selectors we'll need
@@ -27,6 +28,7 @@ sk.getDOMSelectors = function(){
 	sk.dom = {};
 	sk.dom.$window = $(window);
 	sk.dom.$postsContainer = $('.posts-container');
+	sk.dom.$mailTo = $('.mailto');
 };
 
 // Resize event handler
@@ -65,5 +67,16 @@ sk.postsLayout = function(){
 		isResizeBound : false // We define our own resize function so we will call packery.layout() from there instead
 	});
 };
+
+sk.mailTo = function(){
+
+	sk.dom.$mailTo.on('click', function(){
+		var $target = $(this);
+		var user = $target.data('u');
+		var domain = $target.data('d');
+		$target.attr('href', 'mailto:'+user+'@'+domain);
+	});
+		
+}
 
 
