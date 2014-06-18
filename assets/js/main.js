@@ -20,6 +20,7 @@ sk.init = function(){
 	}, 200));
 
 	sk.mailTo();
+	sk.scrollLinks();
 };
 
 // Grab all the jQuery DOM selectors we'll need
@@ -28,6 +29,7 @@ sk.getDOMSelectors = function(){
 	sk.dom.$window = $(window);
 	sk.dom.$postsContainer = $('.posts-container');
 	sk.dom.$mailTo = $('.mailto');
+	sk.dom.$scrollLink = $('.scroll-link');
 };
 
 // Resize event handler
@@ -73,7 +75,7 @@ sk.initPackery = function(){
 };
 
 
-// Simple mailto obfuscation
+// Simple mailto link obfuscation
 // Grab the separate user and domain strings from the data attrs
 // build the string and insert into href on mouseover
 // Means user can right click and copy the email address straight away (a click event wouldn't work for that)
@@ -94,6 +96,21 @@ sk.mailTo = function(){
 			$target.data('email_revealed', 1);
 		}
 	});	
+}
+
+// Animated scroll to the id stored in the link's href
+// Hides the hash in the address bar. Do we want that?
+sk.scrollLinks = function(){
+
+	sk.dom.$scrollLink.on('click', function(e){
+		
+		var $target = $(this),
+			href = $target.attr('href');
+
+		$('html, body').animate({ scrollTop: $(href).offset().top }, 500);
+
+		return false;
+	});
 }
 
 
