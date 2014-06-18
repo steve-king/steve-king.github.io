@@ -38,6 +38,7 @@
 
 	.post-inner {
 		padding:$fontSizePx / 2;
+		// position:relative;
 	}
 
 	img {
@@ -52,6 +53,13 @@
 		padding-top:56.25%; // 16:9
 		//padding-top:62.5%; // 16:10
 		//padding-top:42.85%; // 21:9
+		
+		/* position: absolute;
+		top: 7px;
+		left: 7px;
+		opacity: 0.1;
+		right: 7px;
+		bottom: 7px; */
 	}
 
 	.top-radius {
@@ -67,6 +75,7 @@
 	.post-content {
 		padding:1px $fontSizePx 1px;
 		@extend .trans_white;
+		// position:relative;
 	}
 
 	.post-meta {
