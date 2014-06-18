@@ -1,7 +1,7 @@
 ---
 publish : true
 permalink: index.html
-title: Lunar Guard (Flash game)
+title: Lunar Guard
 link: http://archive.steveking.info/flash/lunar-guard
 link_text: Play game
 ---

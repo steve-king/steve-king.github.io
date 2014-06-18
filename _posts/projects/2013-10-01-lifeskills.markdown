@@ -2,11 +2,13 @@
 publish : true
 permalink: index.html
 title:  "LifeSkills"
-image: assets/images/lifeskills.jpg
 link: https://www.barclayslifeskills.com/
+image: assets/images/lifeskills.jpg
 ---
 
-My task was to build a a re-usable javascript framework on top of which a series of responsive, interactive "quiz" modules were built. I chose the <a href="http://backbonejs.org/" target="_blank">backbone.js</a> framework for this due to it's inherent flexibility. The modules include:
+My task was to build a series of responsive, interactive "quiz" modules which share the same JS codebase, so that future modules can be more easily created. I chose to use backbone.js for this due to it's inherent flexibility. 
+
+The modules include:
 
 - <a href="https://www.barclayslifeskills.com/key-skills/putting-your-people-skills-into-practice/the-workplace-challenge/" target="_blank">The Workplace Challenge</a>
 - <a href="https://www.barclayslifeskills.com/key-skills/growing-your-people-skills/rate-your-skills/" target="_blank">Rate Your Skills</a>
