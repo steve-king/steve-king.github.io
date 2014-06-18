@@ -83,11 +83,23 @@ sk.initPackery = function(){
 // Grab the separate user and domain strings from the data attrs
 // build the string and insert into href on mouseover
 // Means user can right click and copy the email address straight away (a click event wouldn't work for that)
+// Fallback to standard click event on touch devices (no mouseover)
 sk.mailTo = function(){
 
-	sk.dom.$mailTo.on('mouseover', function(){
+	if( Modernizr.touch ){
+		sk.dom.$mailTo.on('click', function(e){
+			handler(e);
+		});	
+	} else {
+		sk.dom.$mailTo.on('mouseover', function(e){
+			handler(e);
+		});	
+	}
+	
 
-		var $target = $(this);
+	var handler = function(e){
+
+		var $target = $(e.target);
 
 		if( !$target.data('email_revealed') ){
 			
@@ -99,7 +111,7 @@ sk.mailTo = function(){
 			$target.attr('title', email);
 			$target.data('email_revealed', 1);
 		}
-	});	
+	};
 }
 
 // Animated scroll to the id stored in the link's href
