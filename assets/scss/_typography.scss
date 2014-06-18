@@ -1,0 +1,32 @@
+html {
+ 	font-size: 62.5%; // Base font size = 10px
+ 	font-family:"Helvetica Neue", sans-serif;
+ 	font-weight:light;
+ 	-webkit-font-smoothing:antialiased;
+ 	color:rgba(0,0,0,0.75);
+ 	line-height:1.4;
+}
+
+body {
+	@include font-size($fontSize);
+}
+
+a {
+	text-decoration:none;
+	color:$linkColor;
+
+	&:hover {
+		text-decoration:underline;
+	}
+}
+
+h2 {
+	margin:$fontSizePx 0 $fontSizePx;
+	font-weight:300;
+	@include font-size(30);
+	line-height:1;
+}
+
+p {
+	margin-top:0;
+}

@@ -1,0 +1,13 @@
+.site-footer {
+	
+	@include respond-min(420) {
+		margin-left:$headerSize;
+		padding-top:$fontSizePx/2;
+	}
+
+	 p {
+	 	@include font-size(12);
+	 	margin:$fontSizePx 0;
+	 	text-align:center;
+	 }
+}

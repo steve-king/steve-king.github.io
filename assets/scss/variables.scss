@@ -1,20 +1,12 @@
 // Colours
-$color_black : #333;
-$linkColor:darken(skyblue, 30%);
-//$linkColor:#666;
-$baseFontSizePx : 14px;
-$baseFontSize : 14;
+$linkColor:		darken(skyblue, 30%);
 
-$backgroundImage: "../images/backgrounds/geometry23.jpg";
-//$backgroundImage2: "../images/backgrounds/geometry2.jpg";
-
-
-// Values
-$borderRadius:4px;
-
-// Element dimensions
-$headerSize:70px;
+// Default values
+$fontSize:	 	14;
+$fontSizePx: 	$fontSize * 1px;
+$borderRadius:	4px;
+$headerSize:	70px;
 
 // Breakpoints
-$breakpoints: 0,320,420,480,640,800,960,1024;
+$breakpoints: 	0,320,420,480,640,800,960,1024;
 

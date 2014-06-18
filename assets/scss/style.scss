@@ -7,8 +7,13 @@
 		"vendor/boilerplate";
 
 // Author styles
-@import "_icons",
-		"_main";
+@import "base",
+		"icons",
+		"typography",
+		"buttons",
+		"header",
+		"footer",
+		"posts";
 
 // Helper classes/print styles
 @import "vendor/helpers",

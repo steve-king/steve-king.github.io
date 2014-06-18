@@ -1,0 +1,146 @@
+.site-header {
+	position:fixed;
+	top:0;
+	left:0;
+	height:$headerSize;
+	width:100%;
+	
+	padding:0 $fontSizePx;
+	z-index:1;
+
+	background:rgba(255,255,255,0.7);
+
+	@include respond-min(420) {
+		width:$headerSize;
+		height:100%;
+		padding:0;
+	}
+}
+
+.site-logo {
+
+	display:block;
+	height:$headerSize;
+	float:left;
+
+	font-family: 'Lobster Two', sans-serif;
+	@include font-size(56);
+	font-weight:700;
+	font-style:italic;
+	line-height:65px;
+	
+	color:rgba(0,0,0,0.7);
+
+	&:hover {
+		color:rgba(0,0,0,0.85);
+		text-decoration:none;
+	}
+
+	@include respond-min(420) {
+		width:$headerSize;
+		text-align:center;
+		float:none;
+	}
+}
+
+.contact-nav {
+
+	list-style:none;
+	margin:0;
+	padding:0;
+	float:right;
+	position:relative;
+	top:50%;
+
+	.csstransforms & {
+		@include transform(translateY(-50%));
+	}
+
+	.no-csstransforms & {
+		margin-top:-17px;
+	}
+
+	li {
+		float:left;
+		margin:0 0 0 10px;
+	}
+
+	a {
+
+		$iconSize : 30px;
+		display:inline-block;
+		width:$iconSize;
+		height:$iconSize;
+		line-height:$iconSize;
+		
+		text-align:center;
+		overflow:hidden;
+		color:#000;
+		color:rgba(0,0,0,0.7);
+		@include font-size(22);
+
+		&:hover {
+			text-decoration:none;
+			//background:rgba(#fff, 0.7);
+			color:rgba(0,0,0,0.85);
+		}
+	}
+
+	.icon {
+		
+		position:relative;
+		
+		&.icon-mail {
+			font-size:1.05em;
+			//top:-0.03em;
+		}
+
+		&.icon-linkedin {
+			//top:0.05em;
+			font-size:1.15em;
+		}
+
+		&.icon-github {
+			top:0.1em;
+		}
+
+		&.icon-github2 {
+			font-size:1.1em;
+			top:0.11em;
+		}
+
+		&.icon-github3 {
+			top:0.15em;
+		}
+
+		&.icon-github4 {
+			font-size:1.15em;
+			top:0.13em;
+			left:0.08em;
+		}
+
+		&.icon-twitter {
+			top:0.09em;
+			font-size:1.1em;
+		}
+	}
+
+	@include respond-min(420) {
+		float:none;
+		top:auto;
+
+		.csstransforms & {
+			@include transform(translateY(0));
+		}
+
+		.no-csstransforms & {
+			margin-top:0;
+		}
+
+		li {
+			float:none;
+			margin:5px 0 5px 0;
+			text-align:center;
+		}
+	}
+}

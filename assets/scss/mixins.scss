@@ -1,3 +1,4 @@
+// These media query mixins will only work if value passed matches an already defined breakpoint (in variables.scss).
 @mixin respond-min($point) {
 	@each $breakpoint in $breakpoints {
 		@if $point == $breakpoint {
@@ -24,6 +25,14 @@
   font-size: ($sizeValue / 10) + rem;
 }
 
+// CSS3 mixins
+@mixin border-radius($value){
+	-webkit-border-radius : $value;
+	-moz-border-radius : $value;
+	-o-border-radius : $value;
+	border-radius : $value;
+}
+
 @mixin transition($value){
 	-webkit-transition : $value;
 	-moz-transition : $value;
@@ -41,23 +50,9 @@
 }
 
 @mixin transform-origin($value){
-	-webkit-transform-origin: $value;
-    -moz-transform-origin:    $value;
-    -ms-transform-origin:     $value;
-    -o-transform-origin:      $value;
+	-webkit-transform-origin : $value;
+    -moz-transform-origin : $value;
+    -ms-transform-origin : $value;
+    -o-transform-origin : $value;
 }
 
-@mixin border-radius($value){
-	-webkit-border-radius:$value;
-	-moz-border-radius:$value;
-	-o-border-radius:$value;
-	border-radius:$value;
-}
-
-@mixin filter($value){
-	-moz-filter:$value;
-	-webkit-filter:$value;
-	-o-filter:$value;
-	-ms-filter:$value;
-	filter:$value;
-}
