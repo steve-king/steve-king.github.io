@@ -21,6 +21,10 @@ sk.init = function(){
 
 	sk.mailTo();
 	sk.scrollLinks();
+
+	if( Modernizr.touch ){
+		FastClick.attach(document.body);
+	}
 };
 
 // Grab all the jQuery DOM selectors we'll need
