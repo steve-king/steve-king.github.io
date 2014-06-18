@@ -1,11 +1,17 @@
 ---
 permalink: index.html
 publish : true
-title:  "Hi"
-category: static
+category: sticky
+
 link: http://downloads.steveking.info/cv.pdf
 link_text : Get my CV
+link_icon : download2
+
 image: assets/images/desk.jpg
+theme: dark
+hide_meta : true
+
+title:  "Hi"
 ---
 
 I'm Steve King and this is my Web Development portfolio.

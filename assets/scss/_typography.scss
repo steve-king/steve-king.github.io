@@ -16,6 +16,7 @@ a {
 	color:$linkColor;
 	font-weight:bold;
 	color:rgba(0,0,0,0.7);
+	@include transition(color 200ms ease-in-out);
 
 	&:hover {
 		text-decoration:underline;

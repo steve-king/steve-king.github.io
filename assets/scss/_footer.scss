@@ -1,6 +1,6 @@
 .site-footer {
 	
-	padding:$fontSizePx $fontSizePx $fontSizePx/2;
+	padding:$fontSizePx $fontSizePx 0;
 	text-align:center;
 	color:rgba(#000, 0.45);
 	
@@ -19,8 +19,8 @@
 		display:inline-block;
 		@include font-size(70);
 		color:rgba(#fff, 0.4);
-		@include transition(color 200ms ease-in-out);
 		text-decoration:none;
+		margin-bottom:7px;
 
 		&:hover {
 			text-decoration:none;
@@ -28,8 +28,13 @@
 		}
 	}
 
-	@include respond-min(420) {
+	max-width:$postMaxWidth;
+
+	@include respond-min(420px) {
 		margin-left:$headerSize;
-		text-align:left;
 	}
+
+	// @include respond-min($singleColBreakpoint) {
+	// 	text-align:left;
+	// }
 }

@@ -1,7 +1,0 @@
----
-publish : false
-category: videos
-permalink: index.html
-title: Love Cry
-vimeo_id: 8660746
----

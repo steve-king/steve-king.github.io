@@ -5,29 +5,13 @@ layout: default
 <div class="posts-container">
 
 	{% for post in site.posts %}
-		{% if post.category == "static" and post.publish == true %}
-			<div class="post dark">
-				<div class="post-inner">
-
-					{% if post.image %}
-					<div class="post-image top-radius">
-						<img src="{{post.image}}" alt="{{post.title}}" class="top-radius" />
-					</div>
-					{% endif %}
-					<div class="post-content{% if post.image == nil %} top-radius{% endif %} bottom-radius">
-						<h2>{{ post.title }}</h2>
-						{{ post.content }}
-						{% if post.link %}
-						<p><a href="{{post.link}}" class="btn btn-dark" target="_blank">{{post.link_text}} <span class="icon icon-download2"></span></a></p>
-						{% endif %}
-					</div>
-				</div>
-			</div>
+		{% if post.category == "sticky" and post.publish == true %}
+			{% include post.html %}
 		{% endif %}
 	{% endfor %}
 
 	{% for post in site.posts %}
-		{% if post.category != "static" and post.publish == true %}
+		{% if post.publish == true and post.category != "sticky" %}
 			{% include post.html %}
 		{% endif %}
 	{% endfor %}

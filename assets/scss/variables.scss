@@ -2,11 +2,14 @@
 $linkColor:		darken(skyblue, 30%);
 
 // Default values
-$fontSize:	 	14;
-$fontSizePx: 	$fontSize * 1px;
-$borderRadius:	4px;
-$headerSize:	70px;
+$fontSize     :	14;
+$fontSizePx   : $fontSize * 1px;
+$borderRadius :	4px;
+$headerSize   :	70px;
+$postMaxWidth : 480px;
+$postMinWidth : 200px;
+
+$singleColBreakpoint : $postMaxWidth + $headerSize + $fontSizePx;
 
 // Breakpoints
-$breakpoints: 	0,320,420,480,640,800,960,1024;
-
+$breakpoints : 420px, $singleColBreakpoint;

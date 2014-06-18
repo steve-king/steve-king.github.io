@@ -109,7 +109,7 @@ sk.mailTo = function(){
 			$target.data('email_revealed', 1);
 		}
 	});
-}
+};
 
 // Animated scroll to the id stored in the link's href
 // Hides the hash in the address bar. Do we want that?
@@ -124,6 +124,6 @@ sk.scrollLinks = function(){
 
 		return false;
 	});
-}
+};
 
 

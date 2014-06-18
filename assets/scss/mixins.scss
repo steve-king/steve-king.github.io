@@ -2,7 +2,7 @@
 @mixin respond-min($point) {
 	@each $breakpoint in $breakpoints {
 		@if $point == $breakpoint {
-			@media (min-width:#{$breakpoint / 16}em) { 
+			@media (min-width:$breakpoint) { 
 				@content; 
 			}
 		}
@@ -12,7 +12,7 @@
 @mixin respond-max($point) {
 	@each $breakpoint in $breakpoints {
 		@if $point == $breakpoint {
-			@media (min-width:#{$breakpoint-1 / 16}em) { 
+			@media (min-width:$breakpoint-1) { 
 				@content; 
 			}
 		}
@@ -26,12 +26,19 @@
 }
 
 // CSS3 mixins
-@mixin border-radius($value){
-	-webkit-border-radius : $value;
-	-moz-border-radius : $value;
-	-o-border-radius : $value;
-	border-radius : $value;
-}
+// @mixin border-radius($value){
+// 	-webkit-border-radius : $value;
+// 	-moz-border-radius : $value;
+// 	-o-border-radius : $value;
+// 	border-radius : $value;
+// }
+
+// @mixin border-radius-top-left($value){
+// 	-webkit-border-radius : $value;
+// 	-moz-border-radius : $value;
+// 	-o-border-radius : $value;
+// 	border-radius : $value;
+// }
 
 @mixin transition($value){
 	-webkit-transition : $value;

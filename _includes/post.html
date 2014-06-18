@@ -1,42 +1,40 @@
-{% if post.category == "videos" %}
-	
-	<div class="post">
-		<div class="post-inner">
-			<div class="video-container">
-				<iframe src="//player.vimeo.com/video/{{post.vimeo_id}}?title=0&amp;portrait=0&amp;color=ff0179" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
+<div class="post {% if post.theme %}post-{{post.theme}}{% endif %}">
 
-{% elsif post.category == "sounds" %}
-	
-	<div class="post">
-		<div class="post-inner">
-			<iframe width="100%" height="166" scrolling="no" frameborder="no" src="{{post.embed_url}}&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=false&amp;show_comments=false&amp;show_user=true&amp;show_reposts=false"></iframe>
-		</div>
-	</div>
+	<div class="post-inner">
 
-{% else %}
-	
-	<div class="post">
-		<div class="post-inner">
+		{% if post.image %}
+			<div class="post-image top-radius" style="background-image:url({{post.image}})"></div>
+			<!-- <img src="{{post.image}}" alt="{{post.title}}" class="top-radius" /> -->
+		{% endif %}
 
-			{% if post.image %}
-				<img src="{{post.image}}" alt="{{post.title}}" class="top-radius" />
+		<div class="post-content{% unless post.image %} top-radius{% endunless %}{% if post.hide_meta %} bottom-radius{% endif %}">
+			
+			<h2>{{ post.title }}</h2>
+			
+			{{ post.content }}
+			
+			{% if post.link %}
+			<p>
+				<a href="{{post.link}}" class="btn {% if post.theme %}btn-{{post.theme}}{% endif %}" target="_blank">
+					{% if post.link_text %}{{ post.link_text }}{% else %}Visit site{% endif %}
+
+					{% if post.link_icon %}
+						<span class="icon icon-{{post.link_icon}}"></span>
+					{% else %}
+						<span class="icon icon-open"></span>
+					{% endif %}
+				</a>
+			</p>
 			{% endif %}
 
-			<div class="post-content{% if post.image == nil %} top-radius{% endif %}">
-				<h2>{{ post.title }}</h2>
-				{{ post.content }}
-				{% if post.link %}
-				<p><a href="{{post.link}}" class="btn" target="_blank">Visit site <span class="icon icon-open"></span></a></p>
-				{% endif %}
-			</div>
-
-			<div class="post-meta">
-				<span class="post-date"><span class="icon icon-clock"></span> {{ post.date | date: "%B %Y" }}</span>
-			</div>
 		</div>
+
+		{% unless post.hide_meta %}
+		<div class="post-meta">
+			<span class="post-date"><span class="icon icon-clock"></span> {{ post.date | date: "%B %Y" }}</span>
+		</div>
+		{% endunless %}
+
 	</div>
+</div>
 	
-{% endif %}

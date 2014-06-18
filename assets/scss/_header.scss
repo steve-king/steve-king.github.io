@@ -10,7 +10,7 @@
 
 	background:rgba(255,255,255,0.7);
 
-	@include respond-min(420) {
+	@include respond-min(420px) {
 		width:$headerSize;
 		height:100%;
 		padding:0;
@@ -128,7 +128,7 @@
 		}
 	}
 
-	@include respond-min(420) {
+	@include respond-min(420px) {
 		float:none;
 		top:auto;
 
