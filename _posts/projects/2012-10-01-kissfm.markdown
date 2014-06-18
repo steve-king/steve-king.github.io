@@ -3,7 +3,6 @@ publish : true
 permalink: index.html
 title:  "Kiss FM Radio Player"
 link: http://radioplayer.kissfmuk.com/
-link_text: Visit site
 ---
 
 I worked closely with the lead designer to design and build the front end templates for Kiss FM's new online radio player. CSS was supplied in a "themeable" format allowing the client to re-skin and roll out this design across Bauer Media's portfolio of UK radio stations, including <a href="http://radioplayer.kerrangradio.co.uk/" target="_blank">Kerrang FM</a> and <a href="http://radioplayer.magic.co.uk/live/" target="_blank">Magic FM</a>. 

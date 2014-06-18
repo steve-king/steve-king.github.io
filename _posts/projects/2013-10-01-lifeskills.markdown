@@ -4,7 +4,6 @@ permalink: index.html
 title:  "LifeSkills"
 image: assets/images/lifeskills.jpg
 link: https://www.barclayslifeskills.com/
-link_text: Visit site
 ---
 
 My task was to build a a re-usable javascript framework on top of which a series of responsive, interactive "quiz" modules were built. I chose the <a href="http://backbonejs.org/" target="_blank">backbone.js</a> framework for this due to it's inherent flexibility. The modules include:

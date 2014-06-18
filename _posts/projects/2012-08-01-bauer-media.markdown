@@ -3,6 +3,7 @@ publish : true
 permalink: index.html
 title:  "Bauer Media"
 image: assets/images/bauer.jpg
+link: http://www.bauermedia.co.uk/
 ---
 
 This site was developed primarily by myself over a period of 2-3 months.

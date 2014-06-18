@@ -3,7 +3,6 @@ publish : true
 permalink: index.html
 title: 24 Hair & beauty
 link: http://24hairandbeautysalon.com/
-link_text: Visit site
 ---
 
 Freelance project - a responsive WordPress build for a beauty salon. Leverages the Google maps API on the <a href="#" target="_blank">contact page</a> to give users directions to the salon.
