@@ -19,7 +19,6 @@ sk.init = function(){
 		sk.onResize();
 	}, 200));
 
-	sk.postsLayout();
 	sk.mailTo();
 };
 
@@ -35,8 +34,8 @@ sk.getDOMSelectors = function(){
 sk.onResize = function(){
 
 	// Save the previous width and height (do we need these?)
-	sk.config.prevWidth = (sk.config.currentWidth !== undefined) ? sk.config.currentWidth : sk.dom.$window.width();
-	sk.config.prevHeight = (sk.config.currentHeight !== undefined) ? sk.config.currentHeight : sk.dom.$window.height();
+	//sk.config.prevWidth = (sk.config.currentWidth !== undefined) ? sk.config.currentWidth : sk.dom.$window.width();
+	//sk.config.prevHeight = (sk.config.currentHeight !== undefined) ? sk.config.currentHeight : sk.dom.$window.height();
 
 	// Save current width and height
 	sk.config.currentWidth  = sk.dom.$window.width();
@@ -57,10 +56,15 @@ sk.onResize = function(){
 	// Layout the packery items again
 	if( sk.packery !== undefined ){
 		sk.packery.layout();
+	} 
+
+	// Init packery when there is room for more than one column
+	if( sk.packery === undefined && numColumns > 1){
+		sk.initPackery();
 	}
 };
 
-sk.postsLayout = function(){
+sk.initPackery = function(){
 	// Initialise packery and it's options
 	sk.packery = new Packery(sk.dom.$postsContainer[0], {
 		itemSelector: '.post',
