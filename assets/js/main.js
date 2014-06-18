@@ -68,15 +68,28 @@ sk.postsLayout = function(){
 	});
 };
 
+
+// Simple mailto obfuscation
+// Grab the separate user and domain strings from the data attrs
+// build the string and insert into href on mouseover
+// Means user can right click and copy the email address straight away (a click event wouldn't work for that)
 sk.mailTo = function(){
 
-	sk.dom.$mailTo.on('click', function(){
+	sk.dom.$mailTo.on('mouseover', function(){
+
 		var $target = $(this);
-		var user = $target.data('u');
-		var domain = $target.data('d');
-		$target.attr('href', 'mailto:'+user+'@'+domain);
-	});
-		
+
+		if( !$target.data('email_revealed') ){
+			
+			var user = $target.data('u'),
+				domain = $target.data('d'),
+				email = user+'@'+domain;
+
+			$target.attr('href', 'mailto:'+email);
+			$target.attr('title', email);
+			$target.data('email_revealed', 1);
+		}
+	});	
 }
 
 
