@@ -89,7 +89,7 @@ sk.mailTo = function(){
 	var theEvent = '';
 
 	if( Modernizr.touch ){
-		theEvent = 'touchstart';
+		theEvent = 'click';
 	} else {
 		theEvent = 'mouseover';
 	}
