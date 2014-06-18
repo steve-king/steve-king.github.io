@@ -86,20 +86,17 @@ sk.initPackery = function(){
 // Fallback to standard click event on touch devices (no mouseover)
 sk.mailTo = function(){
 
+	var theEvent = '';
+
 	if( Modernizr.touch ){
-		sk.dom.$mailTo.on('click', function(e){
-			handler(e);
-		});	
+		theEvent = 'touchstart';
 	} else {
-		sk.dom.$mailTo.on('mouseover', function(e){
-			handler(e);
-		});	
+		theEvent = 'mouseover';
 	}
 	
+	sk.dom.$mailTo.on(theEvent, function(e){
 
-	var handler = function(e){
-
-		var $target = $(e.target);
+		var $target = $(this);
 
 		if( !$target.data('email_revealed') ){
 			
@@ -111,7 +108,7 @@ sk.mailTo = function(){
 			$target.attr('title', email);
 			$target.data('email_revealed', 1);
 		}
-	};
+	});
 }
 
 // Animated scroll to the id stored in the link's href
