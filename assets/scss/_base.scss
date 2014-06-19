@@ -9,7 +9,9 @@ body {
 .site-main {
 	margin:0 $fontSizePx/2;
 	padding:$headerSize + ($fontSizePx/2) 0 0;
-	max-width:960px;
+	//max-width:960px; // 2 col?
+	//max-width:1540px; // 3 col?
+	max-width:$postMaxWidth * 3;
 
 	@include respond-min(420) {
 		margin-left:$headerSize + ($fontSizePx / 2);

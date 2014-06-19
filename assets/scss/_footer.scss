@@ -28,13 +28,23 @@
 		}
 	}
 
-	max-width:$postMaxWidth;
+	//max-width:$postMaxWidth * 3;
 
 	@include respond-min(420px) {
 		margin-left:$headerSize;
 	}
 
-	// @include respond-min($singleColBreakpoint) {
-	// 	text-align:left;
-	// }
+	@include respond-min($singleColBreakpoint) {
+		text-align:left;
+
+		.icon-arrow-up {
+			float:left;
+			margin-right:10px;
+		}
+
+		p {
+			float:left;
+			margin:24px 0;
+		}
+	}
 }
