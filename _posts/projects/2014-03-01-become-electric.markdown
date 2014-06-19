@@ -3,7 +3,7 @@ publish : true
 permalink: index.html
 title:  "Become Electric"
 link: http://becomeelectric.co.uk
-image: assets/images/become-electric.jpg
+image: assets/images/bmw.png
 ---
 
 Responsive, mobile first microsite to promote the launch of BMW's new fully electric car, the i3.

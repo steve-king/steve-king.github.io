@@ -3,7 +3,7 @@ publish : true
 permalink: index.html
 title:  "LifeSkills"
 link: https://www.barclayslifeskills.com/
-image: assets/images/lifeskills.jpg
+image: assets/images/barclays.png
 ---
 
 My task was to build a series of responsive, interactive "quiz" modules which share the same JS codebase, so that future modules can be more easily created. I chose to use backbone.js for this due to it's inherent flexibility. 

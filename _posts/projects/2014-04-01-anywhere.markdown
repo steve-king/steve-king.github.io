@@ -3,7 +3,7 @@ publish : true
 permalink: index.html
 title:  "Barclaycard Anywhere"
 link: http://barclaycardanywhere.co.uk
-image: assets/images/anywhere.jpg
+image: assets/images/barclaycard.png
 ---
 
 A fully responsive microsite to promote Barclaycard's new mobile point of sale service for small business owners.
