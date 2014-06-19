@@ -2,11 +2,11 @@
 	
 	padding:$fontSizePx $fontSizePx 0;
 	text-align:center;
-	color:rgba(#000, 0.45);
+	color:rgba(0,0,0, 0.45);
 	
 	a {
 		//text-decoration:underline;
-		color:rgba(#000, 0.6);
+		color:rgba(0,0,0, 0.6);
 	}
 
 	p {
@@ -18,13 +18,13 @@
 	.icon-arrow-up {
 		display:inline-block;
 		@include font-size(70);
-		color:rgba(#fff, 0.4);
+		color:rgba(255,255,255, 0.4);
 		text-decoration:none;
 		margin-bottom:7px;
 
 		&:hover {
 			text-decoration:none;
-			color:rgba(#fff, 0.7);
+			color:rgba(255,255,255, 0.7);
 		}
 	}
 

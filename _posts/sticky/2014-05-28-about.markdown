@@ -5,7 +5,7 @@ category: sticky
 
 link: http://downloads.steveking.info/cv.pdf
 link_text : Get my CV
-link_icon : download2
+link_icon : download
 
 image: assets/images/desk.jpg
 theme: dark

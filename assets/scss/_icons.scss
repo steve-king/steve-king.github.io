@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('../fonts/icomoon.eot?-ccdcwq');
-	src:url('../fonts/icomoon.eot?#iefix-ccdcwq') format('embedded-opentype'),
-		url('../fonts/icomoon.woff?-ccdcwq') format('woff'),
-		url('../fonts/icomoon.ttf?-ccdcwq') format('truetype'),
-		url('../fonts/icomoon.svg?-ccdcwq#icomoon') format('svg');
+	src:url('../fonts/icomoon.eot?-ctu2x9');
+	src:url('../fonts/icomoon.eot?#iefix-ctu2x9') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-ctu2x9') format('woff'),
+		url('../fonts/icomoon.ttf?-ctu2x9') format('truetype'),
+		url('../fonts/icomoon.svg?-ctu2x9#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,40 +23,18 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-calendar1:before {
-	content: "\e606";
-}
-.icon-calendar2:before {
-	content: "\e605";
-}
 .icon-mail:before {
 	content: "\e603";
 }
 .icon-clock:before {
 	content: "\e014";
 }
-.icon-download:before {
-	content: "\e069";
-}
-.icon-download2:before {
-	content: "\e122";
-}
-.icon-download3:before {
-	content: "\e067";
-}
-.icon-arrow-left:before {
-	content: "\e094";
-}
-.icon-arrow-right:before {
-	content: "\e095";
-}
 .icon-arrow-up:before {
 	content: "\e096";
 }
-.icon-arrow-down:before {
-	content: "\e097";
+.icon-download:before {
+	content: "\e122";
 }
-
 .icon-open:before {
 	content: "\e128";
 }
@@ -64,19 +42,8 @@
 	content: "\e604";
 }
 .icon-github:before {
-	content: "\e600";
-}
-.icon-github2:before {
 	content: "\e601";
-}
-.icon-github3:before {
-	content: "\e602";
-}
-.icon-github4:before {
-	content: "\f09b";
 }
 .icon-linkedin:before {
 	content: "\e607";
 }
-
-

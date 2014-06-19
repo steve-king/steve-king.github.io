@@ -1,7 +1,7 @@
 ---
 publish : true
 permalink: index.html
-title:  "Become Electric"
+title:  "BMW i3"
 link: http://becomeelectric.co.uk
 image: assets/images/bmw.png
 ---

@@ -26,8 +26,8 @@ a {
 h2 {
 	margin:$fontSizePx 0 $fontSizePx;
 	font-weight:300;
-	@include font-size(30);
-	line-height:1;
+	@include font-size(27);
+	line-height:1.2;
 }
 
 p {

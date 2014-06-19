@@ -1,7 +1,7 @@
 ---
 publish : true
 permalink: index.html
-title:  "LifeSkills"
+title:  "Barclays LifeSkills"
 link: https://www.barclayslifeskills.com/
 image: assets/images/barclays.png
 ---

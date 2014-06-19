@@ -38,7 +38,6 @@
 
 	.post-inner {
 		padding:$fontSizePx / 2;
-		// position:relative;
 	}
 
 	img {
@@ -53,13 +52,6 @@
 		padding-top:56.25%; // 16:9
 		//padding-top:62.5%; // 16:10
 		//padding-top:42.85%; // 21:9
-		
-		/* position: absolute;
-		top: 7px;
-		left: 7px;
-		opacity: 0.1;
-		right: 7px;
-		bottom: 7px; */
 	}
 
 	.top-radius {
@@ -79,30 +71,19 @@
 	}
 
 	.post-meta {
-		background: rgba(255,255,255,0.4);
-		border-radius:0 0 $borderRadius $borderRadius;
-		color:#fff;
+
 		padding:$fontSizePx/2 $fontSizePx $fontSizePx/2;
+		border-radius:0 0 $borderRadius $borderRadius;
+		background: rgba(255,255,255,0.4);
+
 		@include font-size(14);
-		text-shadow: 0 0px 35px rgba(0,0,0,0.5);
+		color:rgba(0,0,0,0.35);
 
 		.icon-clock {
 			font-size:1.2em;
-			//font-weight:bold;
 			position:relative;
-			top:0.05em;
-		}
-
-		.icon-calendar1 {
-			font-size:1.2em;
-			position:relative;
-			top:0.05em;
-		}
-
-		.icon-calendar2 {
-			font-size:1.3em;
-			position:relative;
-			top:0.05em;
+			top:0.04em;
+			margin-left: -0.15em;
 		}
 	}
 

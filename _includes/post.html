@@ -10,7 +10,10 @@
 		<div class="post-content{% unless post.image %} top-radius{% endunless %}{% if post.hide_meta %} bottom-radius{% endif %}">
 			
 			<h2>{{ post.title }}</h2>
-			
+			{% if post.client %}
+				<p>Client: {{post.client}}</p>
+			{% endif %}
+
 			{{ post.content }}
 			
 			{% if post.link %}

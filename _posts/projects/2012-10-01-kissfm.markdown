@@ -1,7 +1,7 @@
 ---
 publish : true
 permalink: index.html
-title:  "Kiss FM Radio Player"
+title:  "KissFM Radio Player"
 link: http://radioplayer.kissfmuk.com/
 image : assets/images/kissfm.png
 ---
