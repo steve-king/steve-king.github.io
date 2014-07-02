@@ -7,7 +7,7 @@ link: http://downloads.steveking.info/cv_steve_king.pdf
 link_text : Get my CV
 link_icon : download
 
-image: assets/images/desk.jpg
+image: assets/images/about.jpg
 theme: dark
 hide_meta : true
 
