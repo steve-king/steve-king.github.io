@@ -3,7 +3,7 @@ permalink: index.html
 publish : true
 category: sticky
 
-link: http://downloads.steveking.info/cv.pdf
+link: http://downloads.steveking.info/cv_steve_king.pdf
 link_text : Get my CV
 link_icon : download
 
