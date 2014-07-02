@@ -2,6 +2,7 @@
 publish : true
 permalink: index.html
 title: Lunar Guard
+image: assets/images/lunarguard.jpg
 link: http://archive.steveking.info/flash/lunar-guard
 link_text: Play game
 ---

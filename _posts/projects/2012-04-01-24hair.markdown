@@ -2,6 +2,7 @@
 publish : true
 permalink: index.html
 title: 24 Hair & beauty
+image: assets/images/24hair.jpg
 link: http://24hairandbeautysalon.com/
 ---
 

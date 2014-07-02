@@ -1,5 +1,5 @@
 ---
-publish : true
+publish : false
 permalink: index.html
 title:  "Grow Africa"
 link: http://growafrica.com/

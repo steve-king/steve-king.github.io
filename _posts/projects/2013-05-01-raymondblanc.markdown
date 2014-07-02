@@ -2,6 +2,7 @@
 publish : true
 permalink: index.html
 title:  "Raymond Blanc"
+image : assets/images/raymondblanc.png
 link: http://raymondblanc.com/
 ---
 
