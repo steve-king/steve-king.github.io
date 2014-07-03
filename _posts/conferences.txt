@@ -1,0 +1,24 @@
+Conferences
+
+Generate - 13/09/2013
+http://www.generateconf.com/
+I attended a great conference, "Generate", presented by net magazine. There was a broad range of topics covered across web design and development, but Jack Franklin's talk on "The New Era of Javascript" stood out for me. - http://www.youtube.com/watch?v=M2QlYCPRpdE&list=PLb_ziuDPiUzZkc077IW3_rDcqX1OC8VbV
+
+Bacon - 16-17/05/2014
+http://devslovebacon.com/
+This was a two day conference on "all the things developers love". There were many fun and interesting talks. Here are some of the one I enjoyed most:
+
+- The talk on talks (http://devslovebacon.com/conferences/bacon-2014/talks/the-talk-on-talks)
+- The algorithmic raver (http://devslovebacon.com/conferences/bacon-2014/talks/the-algorithmic-raver)
+- Joys and pains of working with an old codebase (http://devslovebacon.com/conferences/bacon-2014/talks/the-joys-and-pains-of-working-with-an-old-codebase)
+- How to create the perfect prototype (http://devslovebacon.com/conferences/bacon-2014/talks/how-to-create-the-perfect-prototype)
+- How Github makes working remotely not suck (http://devslovebacon.com/conferences/bacon-2014/talks/remote-by-default-how-github-makes-working-remotely-not-suck)
+
+Playful - 25/10/2013
+http://www.thisisplayful.com
+A conference all about playing - whether with code, design, food, art, games, or any combination of the above. There were an extremely diverse range of talks, the one common factor being the playful theme. Most of them were completely unrelated to web development, but they were all interesting, amusing, and thought provoking.
+
+Front End London
+http://www.frontendlondon.co.uk/
+This evening talk is hosted monthly at Made by Many(http://madebymany.com/). I've attended several of these events over the last year or so. The speakers are always top quality, not to mention the free beer, pizza, and friendly hosts.
+
