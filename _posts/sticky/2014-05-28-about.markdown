@@ -14,4 +14,4 @@ hide_meta : true
 title:  "Hi"
 ---
 
-I'm Steve King and this is my Web Development portfolio. Here you can check out my latest projects and see what conferences I have been attending recently.
+I'm Steve King and this is my Web Development portfolio. Here you can download my CV, check out my latest projects and see what conferences I have been attending recently.
