@@ -6,7 +6,7 @@ link: http://www.thisisplayful.com
 link_text : Playful
 
 image: assets/images/playful-conf-2013.jpg
-theme: dark
+theme: light
 
 title:  "Playful Conference"
 ---

@@ -6,7 +6,7 @@ link: http://www.generateconf.com/
 link_text : Generate
 
 image: assets/images/generate-conf-2013.jpg
-theme: dark
+theme: light
 
 title:  "Generate Conference"
 ---

@@ -6,7 +6,7 @@ link: http://devslovebacon.com/
 link_text : Bacon
 
 image: assets/images/bacon-conf-2014.png
-theme: dark
+theme: light
 
 title:  "Bacon Conference"
 ---

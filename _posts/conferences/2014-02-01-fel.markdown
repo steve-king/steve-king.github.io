@@ -6,7 +6,7 @@ link: http://www.frontendlondon.co.uk/
 link_text : FEL
 
 image: assets/images/fel.png
-theme: dark
+theme: light
 hide_meta : true
 
 title:  "Front End London"
