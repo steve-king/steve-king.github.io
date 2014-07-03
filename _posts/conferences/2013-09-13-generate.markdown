@@ -1,0 +1,14 @@
+---
+permalink: index.html
+publish : true
+
+link: http://www.generateconf.com/
+link_text : Generate
+
+image: assets/images/generate-conf-2013.jpg
+theme: dark
+
+title:  "Generate Conference"
+---
+
+I attended a great conference, "Generate", presented by net magazine. There was a broad range of topics covered across web design and development, but <a href="http://www.youtube.com/watch?v=M2QlYCPRpdE&list=PLb_ziuDPiUzZkc077IW3_rDcqX1OC8VbV" target="_blank">Jack Franklin's talk on "The New Era of Javascript"</a> stood out for me.
