@@ -27,7 +27,7 @@ module.exports = function(grunt) {
       options: {
         mangle: false,
       },
-      my_target: {
+      js: {
         files: {
           'assets/js/sk.min.js' : ['assets/js/vendor/jquery-1.11.0.min.js', 
                                    'assets/js/plugins.js',
