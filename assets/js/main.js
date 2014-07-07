@@ -34,7 +34,7 @@ sk.getDOMSelectors = function(){
 	sk.dom.$postsContainer = $('.posts-container');
 	sk.dom.$mailTo = $('.mailto');
 	sk.dom.$scrollLink = $('.scroll-link');
-}
+};
 
 // Resize event handler
 sk.onResize = function(){
