@@ -1,5 +1,5 @@
 ---
-publish : true
+publish : false
 permalink: index.html
 title:  "Dennis Christensen"
 link: http://dennismchristensen.com
