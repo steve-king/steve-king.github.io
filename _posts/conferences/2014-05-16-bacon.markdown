@@ -11,7 +11,7 @@ theme: light
 title:  "Bacon Conference"
 ---
 
-This was a two day conference on "all the things developers love". There were many fun and interesting talks. Here are some of the one I enjoyed most:
+A two day conference on "things developers love". There were many fun and interesting talks. Here are the ones I enjoyed most:
 
 - <a href="http://devslovebacon.com/conferences/bacon-2014/talks/the-talk-on-talks" target="_blank">The talk on talks</a>
 - <a href="http://devslovebacon.com/conferences/bacon-2014/talks/the-algorithmic-raver" target="_blank">The algorithmic raver</a>
