@@ -21,6 +21,11 @@ a {
 	&:hover {
 		text-decoration:underline;
 	}
+
+	.post-dark & {
+		color:#fff;
+		color:rgba(255,255,255,0.8);
+	}
 }
 
 h2 {

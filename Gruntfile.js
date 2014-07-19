@@ -20,7 +20,20 @@ module.exports = function(grunt) {
       src: ['assets/js/**/*.js',
             '!assets/js/vendor/*.js',
             '!assets/js/plugins.js',
-            '!assets/js/plugins/**/*.js']
+            '!assets/js/plugins/**/*.js',
+            '!assets/js/sk.min.js']
+    },
+    uglify: {
+      options: {
+        mangle: false,
+      },
+      js: {
+        files: {
+          'assets/js/sk.min.js' : ['assets/js/vendor/jquery-1.11.0.min.js', 
+                                   'assets/js/plugins.js',
+                                   'assets/js/main.js']
+        }
+      }
     },
     imagemin : {
       crunch : {
@@ -47,18 +60,19 @@ module.exports = function(grunt) {
       scripts : {
         files: ['assets/js/**/*.js',
               '!assets/js/vendor/*.js',
-              '!assets/js/plugins/*.js'],
-        tasks: ['jshint']
+              '!assets/js/plugins/*.js',
+              '!assets/js/sk.min.js'],
+        tasks: ['jshint', 'uglify']
       },
       css : {
         files: ['assets/scss/*.scss',
                 'assets/scss/*/*.scss'],
         tasks: ['sass']
       },
-      //images : {
+      // images : {
       //  files: ['assets/images/**/*.{png,jpg,gif}'],
-      //  tasks: ['crunch']
-      //},
+      //  tasks: ['imagemin']
+      // },
       jekyll : {
         files: ['**/*.markdown',
                 '**/**/*.markdown',
@@ -76,9 +90,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
 
   // default tasks run in development
-  grunt.registerTask('default', ['sass', 'jshint', 'crunch', 'shell']);
+  grunt.registerTask('default', ['sass', 'jshint', 'uglify', 'crunch', 'shell']);
   grunt.registerTask('crunch', ['imagemin']);
   
 };

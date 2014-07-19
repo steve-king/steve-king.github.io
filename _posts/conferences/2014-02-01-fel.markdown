@@ -1,0 +1,15 @@
+---
+permalink: index.html
+publish : true
+
+link: http://www.frontendlondon.co.uk/
+link_text : FEL
+
+image: assets/images/fel.png
+theme: light
+hide_meta : true
+
+title:  "Front End London"
+---
+
+This evening talk is hosted monthly at <a href="http://madebymany.com/" target="_blank">Made by Many</a>. I've attended several of these events over the last year or so. The speakers are always top quality, not to mention the free beer, pizza, and friendly hosts.

@@ -1,0 +1,14 @@
+---
+permalink: index.html
+publish : true
+
+link: http://www.thisisplayful.com
+link_text : Playful
+
+image: assets/images/playful-conf-2013.jpg
+theme: light
+
+title:  "Playful Conference"
+---
+
+A conference all about playing - whether with code, design, food, art, games, or any combination of the above. There were an extremely diverse range of talks, the one common factor being the playful theme. Most of them were completely unrelated to web development, but they were all interesting, amusing, and thought provoking.

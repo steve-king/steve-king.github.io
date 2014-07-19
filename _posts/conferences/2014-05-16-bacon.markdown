@@ -1,0 +1,20 @@
+---
+permalink: index.html
+publish : true
+
+link: http://devslovebacon.com/
+link_text : Bacon
+
+image: assets/images/bacon-conf-2014.png
+theme: light
+
+title:  "Bacon Conference"
+---
+
+A two day conference on "things developers love". There were many fun and interesting talks. Here are the ones I enjoyed most:
+
+- <a href="http://devslovebacon.com/conferences/bacon-2014/talks/the-talk-on-talks" target="_blank">The talk on talks</a>
+- <a href="http://devslovebacon.com/conferences/bacon-2014/talks/the-algorithmic-raver" target="_blank">The algorithmic raver</a>
+- <a href="http://devslovebacon.com/conferences/bacon-2014/talks/the-joys-and-pains-of-working-with-an-old-codebase" target="_blank">Joys and pains of working with an old codebase</a>
+- <a href="http://devslovebacon.com/conferences/bacon-2014/talks/how-to-create-the-perfect-prototype" target="_blank">How to create the perfect prototype</a>
+- <a href="http://devslovebacon.com/conferences/bacon-2014/talks/remote-by-default-how-github-makes-working-remotely-not-suck" target="_blank">How Github makes working remotely not suck</a>
