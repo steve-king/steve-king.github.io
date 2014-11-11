@@ -16,8 +16,8 @@ title:  "Hi"
 
 I'm Steve King and this is my Web Development portfolio. 
 
-Here you can download my CV, check out my latest projects and see what conferences I have been attending recently.
+Here you can download my CV, check out my latest projects and see what conferences I've been attending recently.
 
-I'm a versatile developer with over 4 years (full time and freelance) experience at various top London agencies, including Dare, Possible Worldwide and Studio Juice. I write clean, considerate code, have a keen eye for design details and am passionate about crafting great user experiences. Over the years I've worked on projects both large and small, across a wide variety of development workflows and deployment strategies.
+I'm a versatile developer with over 4 years (full time and freelance) experience at various top London agencies, including Dare, Possible Worldwide and Studio Juice. I write clean, considerate code, have a keen eye for design details and I'm passionate about crafting great user experiences. Over the years I've worked on projects both large and small, across a wide variety of development workflows and deployment strategies.
 
-I recently relocated to Cardiff and am currently available for contract work in the surrounding area as well as remote work. If you have a new project or contract opportunity you think I might be suited for, please get in touch!
+I recently relocated to Cardiff and I'm currently available for contract work in the surrounding area as well as remote work. If you have a new project or contract opportunity you think I might be suited for, please get in touch!
