@@ -19,3 +19,5 @@ I was tasked with developing several of the site's content "episodes", including
 
 The site is built on a PHP backend using the CodeIgniter PHP framework.
 
+Deployments were made via Jenkins CI, and code releases were all managed using a well structured Git workflow
+
