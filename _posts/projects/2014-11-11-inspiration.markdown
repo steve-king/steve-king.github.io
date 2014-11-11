@@ -6,7 +6,7 @@ link: http://inspiration.sainsburys-live-well-for-less.co.uk
 image : assets/images/sainsburys.png
 ---
 
-Fully responsive, mobile first site build, ongoing feature additions and maintenance of a high-traffic, heavily customised Wordpress blog for Sainsbury's. Code releases were managed using advanced Git workflow and best practises, with deployments executed over Jenkins CI. Content (database and assets) syncronisation between production, staging and development environments carried out on the command line via shell scripts.
+Site build, ongoing feature additions and maintenance of a high-traffic, fully responsive, mobile first and heavily customised Wordpress blog for Sainsbury's. Code releases were managed using advanced Git workflow and best practises, with deployments executed over Jenkins CI. Content (database and assets) syncronisation between production, staging and development environments carried out on the command line via shell scripts.
 
 Highlights of my work on this project include: 
 
