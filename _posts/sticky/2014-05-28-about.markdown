@@ -11,7 +11,7 @@ image: assets/images/about.jpg
 theme: dark
 hide_meta : true
 
-title:  "Hi"
+title:  "Hi,"
 ---
 
 I'm Steve King and this is my Web Development portfolio. 
