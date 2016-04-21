@@ -3,7 +3,7 @@ permalink: index.html
 publish : true
 category: sticky
 
-link: https://drive.google.com/file/d/0BwUf9GoACLUMRl96R3hucHlfdEE/view
+link: https://drive.google.com/file/d/0BwUf9GoACLUMMlpYcEdTZTlCRVk/view
 link_text : Get my CV
 link_icon : download
 
